@@ -1,0 +1,48 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Thu May  2 21:13:23 2024
+# Process ID: 23292
+# Current directory: D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent20932 D:\BRUFACE\MA2\S02\advancedDigitalArchi\Ex\lab02\project_1\project_1.xpr
+# Log file: D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_1/vivado.log
+# Journal file: D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_1/project_1.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source tb_shiftReg.tcl
+run 300 ns
+synth_design -rtl -name rtl_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+close_design
+open_run synth_1 -name synth_1
+report_power -name {power_1}
+refresh_design
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+refresh_design
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+refresh_design
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+refresh_design
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+launch_simulation -mode post-synthesis -type timing
+source tb_shiftReg.tcl
+run 300 ns
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+open_run impl_1
+report_power -name {power_1}
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+launch_simulation -mode post-implementation -type timing
+source tb_shiftReg.tcl
+run 300 ns
+close_sim
+current_sim simulation_2
+close_sim
+close_sim

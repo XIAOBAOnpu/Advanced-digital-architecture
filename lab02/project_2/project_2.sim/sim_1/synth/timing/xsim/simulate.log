@@ -1,0 +1,15 @@
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+Error: 1101 demod fail
+Time: 95 ns  Iteration: 0  Process: /tb_decoder/Initial37_55  File: D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_2/project_2.srcs/sim_1/new/tb_decoder.v
+Error: 0011 demod fail
+Time: 195 ns  Iteration: 0  Process: /tb_decoder/Initial37_55  File: D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_2/project_2.srcs/sim_1/new/tb_decoder.v
+Error: 0110 demod fail
+Time: 295 ns  Iteration: 0  Process: /tb_decoder/Initial37_55  File: D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_2/project_2.srcs/sim_1/new/tb_decoder.v
+Error: 1100 demod fail
+Time: 395 ns  Iteration: 0  Process: /tb_decoder/Initial37_55  File: D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_2/project_2.srcs/sim_1/new/tb_decoder.v
+Error: 0101 demod fail
+Time: 495 ns  Iteration: 0  Process: /tb_decoder/Initial37_55  File: D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_2/project_2.srcs/sim_1/new/tb_decoder.v
+Error: error detection fail
+Time: 595 ns  Iteration: 0  Process: /tb_decoder/Initial37_55  File: D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_2/project_2.srcs/sim_1/new/tb_decoder.v
+$finish called at time : 595 ns : File "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_2/project_2.srcs/sim_1/new/tb_decoder.v" Line 100

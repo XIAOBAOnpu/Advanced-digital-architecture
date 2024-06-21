@@ -1,0 +1,20 @@
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado2018/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto fb9a1f6c57cd41c081eac498d39af34f --incr --debug typical --relax --mt 2 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot tb_FSMminCode_time_impl -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.tb_FSMminCode xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+INFO: [XSIM 43-3451] SDF backannotation process started with SDF file "tb_FSMminCode_time_impl.sdf", for root module "tb_FSMminCode/tb_FSMminCode_i".
+INFO: [XSIM 43-3452] SDF backannotation was successful for SDF file "tb_FSMminCode_time_impl.sdf", for root module "tb_FSMminCode/tb_FSMminCode_i".
+Time Resolution for simulation is 1ps
+Compiling module simprims_ver.LUT4
+Compiling module simprims_ver.FDCE_default
+Compiling module simprims_ver.BUFG
+Compiling module simprims_ver.IBUF
+Compiling module simprims_ver.OBUF
+Compiling module xil_defaultlib.FSMminCode
+Compiling module xil_defaultlib.tb_FSMminCode
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_FSMminCode_time_impl

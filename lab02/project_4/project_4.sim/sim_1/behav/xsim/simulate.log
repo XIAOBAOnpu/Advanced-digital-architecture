@@ -1,0 +1,12 @@
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+At time                    0 | reset = 0 | in1 = 0 | in2 = 0 | out = 0,| state = x
+At time                10000 | reset = 1 | in1 = 0 | in2 = 0 | out = 0,| state = 1
+At time                20000 | reset = 0 | in1 = 0 | in2 = 0 | out = 0,| state = 1
+At time                50000 | reset = 0 | in1 = 1 | in2 = 0 | out = 1,| state = 2
+At time                60000 | reset = 0 | in1 = 0 | in2 = 0 | out = 1,| state = 2
+At time                90000 | reset = 0 | in1 = 0 | in2 = 1 | out = 0,| state = 0
+At time               100000 | reset = 0 | in1 = 0 | in2 = 0 | out = 0,| state = 0
+At time               110000 | reset = 0 | in1 = 1 | in2 = 0 | out = 0,| state = 1
+At time               120000 | reset = 0 | in1 = 0 | in2 = 0 | out = 0,| state = 1
+$finish called at time : 320 ns : File "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_4/project_4.srcs/sim_1/new/tb_FSMoneHot.v" Line 38

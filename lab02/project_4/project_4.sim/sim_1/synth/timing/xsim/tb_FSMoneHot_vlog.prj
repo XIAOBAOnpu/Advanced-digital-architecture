@@ -1,0 +1,7 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"tb_FSMoneHot_time_synth.v" \
+"../../../../../project_4.srcs/sim_1/new/tb_FSMoneHot.v" \
+
+# Do not sort compile order
+nosort

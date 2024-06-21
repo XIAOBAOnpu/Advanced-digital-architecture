@@ -1,0 +1,381 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Mon May  6 15:24:19 2024
+# Process ID: 13032
+# Current directory: D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_4
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14084 D:\BRUFACE\MA2\S02\advancedDigitalArchi\Ex\lab02\project_4\project_4.xpr
+# Log file: D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_4/vivado.log
+# Journal file: D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_4\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_4/project_4.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado2018/Vivado/2018.3/data/ip'.
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_4/project_4.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_FSMoneHot' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_4/project_4.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_FSMoneHot_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_4/project_4.srcs/sources_1/new/FSMoneHot.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FSMoneHot
+WARNING: [VRFC 10-986] literal value truncated to fit in 2 bits [D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_4/project_4.srcs/sources_1/new/FSMoneHot.v:6]
+WARNING: [VRFC 10-986] literal value truncated to fit in 2 bits [D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_4/project_4.srcs/sources_1/new/FSMoneHot.v:7]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_4/project_4.srcs/sim_1/new/tb_FSMoneHot.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_FSMoneHot
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_4/project_4.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado2018/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto fb9a1f6c57cd41c081eac498d39af34f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_FSMoneHot_behav xil_defaultlib.tb_FSMoneHot xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_4/project_4.srcs/sources_1/new/FSMoneHot.v" Line 1. Module FSMoneHot doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.FSMoneHot
+Compiling module xil_defaultlib.tb_FSMoneHot
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_FSMoneHot_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_4/project_4.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_FSMoneHot_behav -key {Behavioral:sim_1:Functional:tb_FSMoneHot} -tclbatch {tb_FSMoneHot.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source tb_FSMoneHot.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+At time                    0 | reset = 0 | in1 = 0 | in2 = 0 | out = 0,| state = x
+At time                10000 | reset = 1 | in1 = 0 | in2 = 0 | out = 0,| state = 1
+At time                20000 | reset = 0 | in1 = 0 | in2 = 0 | out = 0,| state = 1
+At time                50000 | reset = 0 | in1 = 1 | in2 = 0 | out = 1,| state = 2
+At time                60000 | reset = 0 | in1 = 0 | in2 = 0 | out = 1,| state = 2
+At time                90000 | reset = 0 | in1 = 0 | in2 = 1 | out = 0,| state = 0
+At time               100000 | reset = 0 | in1 = 0 | in2 = 0 | out = 0,| state = 0
+At time               110000 | reset = 0 | in1 = 1 | in2 = 0 | out = 0,| state = 0
+At time               120000 | reset = 0 | in1 = 0 | in2 = 0 | out = 0,| state = 0
+$finish called at time : 320 ns : File "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_4/project_4.srcs/sim_1/new/tb_FSMoneHot.v" Line 38
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_FSMoneHot_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 798.914 ; gain = 17.656
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_4/project_4.runs/synth_1
+
+launch_runs synth_1 -jobs 4
+[Mon May  6 15:30:41 2024] Launched synth_1...
+Run output will be captured here: D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_4/project_4.runs/synth_1/runme.log
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_4/project_4.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_FSMoneHot' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_4/project_4.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_FSMoneHot_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_4/project_4.srcs/sources_1/new/FSMoneHot.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FSMoneHot
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_4/project_4.srcs/sim_1/new/tb_FSMoneHot.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_FSMoneHot
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_4/project_4.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado2018/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto fb9a1f6c57cd41c081eac498d39af34f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_FSMoneHot_behav xil_defaultlib.tb_FSMoneHot xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_4/project_4.srcs/sources_1/new/FSMoneHot.v" Line 1. Module FSMoneHot doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.FSMoneHot
+Compiling module xil_defaultlib.tb_FSMoneHot
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_FSMoneHot_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_4/project_4.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_FSMoneHot_behav -key {Behavioral:sim_1:Functional:tb_FSMoneHot} -tclbatch {tb_FSMoneHot.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source tb_FSMoneHot.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+At time                    0 | reset = 0 | in1 = 0 | in2 = 0 | out = 0,| state = x
+At time                10000 | reset = 1 | in1 = 0 | in2 = 0 | out = 0,| state = 1
+At time                20000 | reset = 0 | in1 = 0 | in2 = 0 | out = 0,| state = 1
+At time                50000 | reset = 0 | in1 = 1 | in2 = 0 | out = 1,| state = 2
+At time                60000 | reset = 0 | in1 = 0 | in2 = 0 | out = 1,| state = 2
+At time                90000 | reset = 0 | in1 = 0 | in2 = 1 | out = 0,| state = 0
+At time               100000 | reset = 0 | in1 = 0 | in2 = 0 | out = 0,| state = 0
+At time               110000 | reset = 0 | in1 = 1 | in2 = 0 | out = 0,| state = x
+At time               120000 | reset = 0 | in1 = 0 | in2 = 0 | out = 0,| state = x
+$finish called at time : 320 ns : File "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_4/project_4.srcs/sim_1/new/tb_FSMoneHot.v" Line 38
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_FSMoneHot_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 808.547 ; gain = 0.000
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_4/project_4.runs/synth_1
+
+launch_runs synth_1 -jobs 4
+[Mon May  6 15:31:25 2024] Launched synth_1...
+Run output will be captured here: D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_4/project_4.runs/synth_1/runme.log
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_4/project_4.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_FSMoneHot' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_4/project_4.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_FSMoneHot_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_4/project_4.srcs/sources_1/new/FSMoneHot.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FSMoneHot
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_4/project_4.srcs/sim_1/new/tb_FSMoneHot.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_FSMoneHot
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_4/project_4.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado2018/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto fb9a1f6c57cd41c081eac498d39af34f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_FSMoneHot_behav xil_defaultlib.tb_FSMoneHot xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_4/project_4.srcs/sources_1/new/FSMoneHot.v" Line 1. Module FSMoneHot doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.FSMoneHot
+Compiling module xil_defaultlib.tb_FSMoneHot
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_FSMoneHot_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_4/project_4.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_FSMoneHot_behav -key {Behavioral:sim_1:Functional:tb_FSMoneHot} -tclbatch {tb_FSMoneHot.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source tb_FSMoneHot.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+At time                    0 | reset = 0 | in1 = 0 | in2 = 0 | out = 0,| state = 1
+At time                10000 | reset = 1 | in1 = 0 | in2 = 0 | out = 0,| state = 1
+At time                20000 | reset = 0 | in1 = 0 | in2 = 0 | out = 0,| state = 1
+At time                50000 | reset = 0 | in1 = 1 | in2 = 0 | out = 1,| state = 2
+At time                60000 | reset = 0 | in1 = 0 | in2 = 0 | out = 1,| state = 2
+At time                90000 | reset = 0 | in1 = 0 | in2 = 1 | out = 0,| state = 0
+At time               100000 | reset = 0 | in1 = 0 | in2 = 0 | out = 0,| state = 0
+At time               110000 | reset = 0 | in1 = 1 | in2 = 0 | out = 0,| state = 1
+At time               120000 | reset = 0 | in1 = 0 | in2 = 0 | out = 0,| state = 1
+$finish called at time : 320 ns : File "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_4/project_4.srcs/sim_1/new/tb_FSMoneHot.v" Line 38
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_FSMoneHot_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_4/project_4.runs/synth_1
+
+launch_runs synth_1 -jobs 4
+[Mon May  6 17:12:51 2024] Launched synth_1...
+Run output will be captured here: D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_4/project_4.runs/synth_1/runme.log
+set_property is_enabled true [get_files  D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_4/project_4.srcs/sources_1/new/FSMminCode.v]
+update_compile_order -fileset sources_1
+set_property top FSMminCode [current_fileset]
+update_compile_order -fileset sources_1
+set_property is_enabled false [get_files  D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_4/project_4.srcs/sources_1/new/FSMoneHot.v]
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_4/project_4.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_FSMoneHot' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_4/project_4.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_FSMoneHot_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_4/project_4.srcs/sim_1/new/tb_FSMoneHot.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_FSMoneHot
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_4/project_4.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado2018/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto fb9a1f6c57cd41c081eac498d39af34f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_FSMoneHot_behav xil_defaultlib.tb_FSMoneHot xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_4/project_4.srcs/sources_1/new/FSMoneHot.v" Line 1. Module FSMoneHot doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.FSMoneHot
+Compiling module xil_defaultlib.tb_FSMoneHot
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_FSMoneHot_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_4/project_4.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_FSMoneHot_behav -key {Behavioral:sim_1:Functional:tb_FSMoneHot} -tclbatch {tb_FSMoneHot.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source tb_FSMoneHot.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+At time                    0 | reset = 0 | in1 = 0 | in2 = 0 | out = 0,| state = 1
+At time                10000 | reset = 1 | in1 = 0 | in2 = 0 | out = 0,| state = 1
+At time                20000 | reset = 0 | in1 = 0 | in2 = 0 | out = 0,| state = 1
+At time                50000 | reset = 0 | in1 = 1 | in2 = 0 | out = 1,| state = 2
+At time                60000 | reset = 0 | in1 = 0 | in2 = 0 | out = 1,| state = 2
+At time                90000 | reset = 0 | in1 = 0 | in2 = 1 | out = 0,| state = 0
+At time               100000 | reset = 0 | in1 = 0 | in2 = 0 | out = 0,| state = 0
+At time               110000 | reset = 0 | in1 = 1 | in2 = 0 | out = 0,| state = 1
+At time               120000 | reset = 0 | in1 = 0 | in2 = 0 | out = 0,| state = 1
+$finish called at time : 320 ns : File "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_4/project_4.srcs/sim_1/new/tb_FSMoneHot.v" Line 38
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_FSMoneHot_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_4/project_4.runs/synth_1
+
+launch_runs synth_1 -jobs 4
+[Mon May  6 17:13:54 2024] Launched synth_1...
+Run output will be captured here: D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_4/project_4.runs/synth_1/runme.log
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_4/project_4.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_FSMoneHot' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_4/project_4.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_FSMoneHot_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_4/project_4.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado2018/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto fb9a1f6c57cd41c081eac498d39af34f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_FSMoneHot_behav xil_defaultlib.tb_FSMoneHot xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_4/project_4.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_FSMoneHot_behav -key {Behavioral:sim_1:Functional:tb_FSMoneHot} -tclbatch {tb_FSMoneHot.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source tb_FSMoneHot.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+At time                    0 | reset = 0 | in1 = 0 | in2 = 0 | out = 0,| state = 1
+At time                10000 | reset = 1 | in1 = 0 | in2 = 0 | out = 0,| state = 1
+At time                20000 | reset = 0 | in1 = 0 | in2 = 0 | out = 0,| state = 1
+At time                50000 | reset = 0 | in1 = 1 | in2 = 0 | out = 1,| state = 2
+At time                60000 | reset = 0 | in1 = 0 | in2 = 0 | out = 1,| state = 2
+At time                90000 | reset = 0 | in1 = 0 | in2 = 1 | out = 0,| state = 0
+At time               100000 | reset = 0 | in1 = 0 | in2 = 0 | out = 0,| state = 0
+At time               110000 | reset = 0 | in1 = 1 | in2 = 0 | out = 0,| state = 1
+At time               120000 | reset = 0 | in1 = 0 | in2 = 0 | out = 0,| state = 1
+$finish called at time : 320 ns : File "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_4/project_4.srcs/sim_1/new/tb_FSMoneHot.v" Line 38
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_FSMoneHot_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_4/project_4.runs/synth_1
+
+launch_runs synth_1 -jobs 4
+[Mon May  6 17:14:51 2024] Launched synth_1...
+Run output will be captured here: D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_4/project_4.runs/synth_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_4/project_4.runs/synth_1
+
+launch_runs synth_1 -jobs 4
+[Mon May  6 17:16:13 2024] Launched synth_1...
+Run output will be captured here: D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_4/project_4.runs/synth_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_4/project_4.runs/synth_1
+
+launch_runs synth_1 -jobs 4
+[Mon May  6 17:17:57 2024] Launched synth_1...
+Run output will be captured here: D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_4/project_4.runs/synth_1/runme.log
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon May  6 17:26:10 2024...

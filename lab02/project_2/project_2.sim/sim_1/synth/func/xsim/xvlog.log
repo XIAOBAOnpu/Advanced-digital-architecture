@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_2/project_2.sim/sim_1/synth/func/xsim/tb_decoder_func_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decoder
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_2/project_2.srcs/sim_1/new/tb_decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_decoder
+WARNING: [VRFC 10-2096] empty statement in sequential block [D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_2/project_2.srcs/sim_1/new/tb_decoder.v:37]

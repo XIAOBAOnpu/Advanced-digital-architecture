@@ -1,0 +1,690 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Mon May  6 18:14:16 2024
+# Process ID: 1960
+# Current directory: D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent20692 D:\BRUFACE\MA2\S02\advancedDigitalArchi\Ex\lab02\project_2\project_2.xpr
+# Log file: D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_2/vivado.log
+# Journal file: D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_2/project_2.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado2018/Vivado/2018.3/data/ip'.
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_2/project_2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_decoder' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_2/project_2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_decoder_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_2/project_2.srcs/sources_1/new/decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_2/project_2.srcs/sim_1/new/tb_decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_decoder
+WARNING: [VRFC 10-2096] empty statement in sequential block [D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_2/project_2.srcs/sim_1/new/tb_decoder.v:37]
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_2/project_2.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado2018/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 417c80a95cea483e9174dba5146026ca --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_decoder_behav xil_defaultlib.tb_decoder xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.decoder
+Compiling module xil_defaultlib.tb_decoder
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_decoder_behav
+
+****** Webtalk v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_2/project_2.sim/sim_1/behav/xsim/xsim.dir/tb_decoder_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Mon May  6 18:18:42 2024...
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_2/project_2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_decoder_behav -key {Behavioral:sim_1:Functional:tb_decoder} -tclbatch {tb_decoder.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source tb_decoder.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+1101 demod success
+0011 demod success
+0110 demod success
+1100 demod success
+0101 demod success
+Error: error detection fail
+Time: 595 ns  Iteration: 0  Process: /tb_decoder/Initial37_3  File: D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_2/project_2.srcs/sim_1/new/tb_decoder.v
+$finish called at time : 595 ns : File "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_2/project_2.srcs/sim_1/new/tb_decoder.v" Line 100
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_decoder_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 860.312 ; gain = 5.570
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_2/project_2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_decoder' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_2/project_2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_decoder_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_2/project_2.srcs/sources_1/new/decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_2/project_2.srcs/sim_1/new/tb_decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_decoder
+WARNING: [VRFC 10-2096] empty statement in sequential block [D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_2/project_2.srcs/sim_1/new/tb_decoder.v:37]
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_2/project_2.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado2018/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 417c80a95cea483e9174dba5146026ca --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_decoder_behav xil_defaultlib.tb_decoder xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.decoder
+Compiling module xil_defaultlib.tb_decoder
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_decoder_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_2/project_2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_decoder_behav -key {Behavioral:sim_1:Functional:tb_decoder} -tclbatch {tb_decoder.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source tb_decoder.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+1101 demod success
+0011 demod success
+0110 demod success
+1100 demod success
+0101 demod success
+Error: error detection fail
+Time: 595 ns  Iteration: 0  Process: /tb_decoder/Initial37_3  File: D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_2/project_2.srcs/sim_1/new/tb_decoder.v
+$finish called at time : 595 ns : File "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_2/project_2.srcs/sim_1/new/tb_decoder.v" Line 100
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_decoder_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+run 10 us
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_2/project_2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_decoder' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_2/project_2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_decoder_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_2/project_2.srcs/sources_1/new/decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_2/project_2.srcs/sim_1/new/tb_decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_decoder
+WARNING: [VRFC 10-2096] empty statement in sequential block [D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_2/project_2.srcs/sim_1/new/tb_decoder.v:37]
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_2/project_2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_2/project_2.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado2018/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 417c80a95cea483e9174dba5146026ca --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_decoder_behav xil_defaultlib.tb_decoder xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.decoder
+Compiling module xil_defaultlib.tb_decoder
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_decoder_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+1101 demod success
+0011 demod success
+0110 demod success
+1100 demod success
+0101 demod success
+Error: error detection fail
+Time: 595 ns  Iteration: 0  Process: /tb_decoder/Initial37_3  File: D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_2/project_2.srcs/sim_1/new/tb_decoder.v
+$finish called at time : 595 ns : File "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_2/project_2.srcs/sim_1/new/tb_decoder.v" Line 100
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_2/project_2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_decoder' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_2/project_2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_decoder_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_2/project_2.srcs/sources_1/new/decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_2/project_2.srcs/sim_1/new/tb_decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_decoder
+WARNING: [VRFC 10-2096] empty statement in sequential block [D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_2/project_2.srcs/sim_1/new/tb_decoder.v:37]
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_2/project_2.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado2018/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 417c80a95cea483e9174dba5146026ca --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_decoder_behav xil_defaultlib.tb_decoder xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.decoder
+Compiling module xil_defaultlib.tb_decoder
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_decoder_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_2/project_2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_decoder_behav -key {Behavioral:sim_1:Functional:tb_decoder} -tclbatch {tb_decoder.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source tb_decoder.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+1101 demod success
+0011 demod success
+Error: 0110 demod fail
+Time: 295 ns  Iteration: 0  Process: /tb_decoder/Initial37_3  File: D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_2/project_2.srcs/sim_1/new/tb_decoder.v
+Error: 1100 demod fail
+Time: 395 ns  Iteration: 0  Process: /tb_decoder/Initial37_3  File: D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_2/project_2.srcs/sim_1/new/tb_decoder.v
+0101 demod success
+Error: error detection fail
+Time: 595 ns  Iteration: 0  Process: /tb_decoder/Initial37_3  File: D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_2/project_2.srcs/sim_1/new/tb_decoder.v
+$finish called at time : 595 ns : File "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_2/project_2.srcs/sim_1/new/tb_decoder.v" Line 100
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_decoder_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_2/project_2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_decoder' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_2/project_2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_decoder_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_2/project_2.srcs/sources_1/new/decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_2/project_2.srcs/sim_1/new/tb_decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_decoder
+WARNING: [VRFC 10-2096] empty statement in sequential block [D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_2/project_2.srcs/sim_1/new/tb_decoder.v:37]
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_2/project_2.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado2018/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 417c80a95cea483e9174dba5146026ca --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_decoder_behav xil_defaultlib.tb_decoder xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.decoder
+Compiling module xil_defaultlib.tb_decoder
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_decoder_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_2/project_2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_decoder_behav -key {Behavioral:sim_1:Functional:tb_decoder} -tclbatch {tb_decoder.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source tb_decoder.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Error: 1101 demod fail
+Time: 95 ns  Iteration: 0  Process: /tb_decoder/Initial37_3  File: D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_2/project_2.srcs/sim_1/new/tb_decoder.v
+Error: 0011 demod fail
+Time: 195 ns  Iteration: 0  Process: /tb_decoder/Initial37_3  File: D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_2/project_2.srcs/sim_1/new/tb_decoder.v
+Error: 0110 demod fail
+Time: 295 ns  Iteration: 0  Process: /tb_decoder/Initial37_3  File: D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_2/project_2.srcs/sim_1/new/tb_decoder.v
+Error: 1100 demod fail
+Time: 395 ns  Iteration: 0  Process: /tb_decoder/Initial37_3  File: D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_2/project_2.srcs/sim_1/new/tb_decoder.v
+Error: 0101 demod fail
+Time: 495 ns  Iteration: 0  Process: /tb_decoder/Initial37_3  File: D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_2/project_2.srcs/sim_1/new/tb_decoder.v
+error detection success
+$finish called at time : 595 ns : File "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_2/project_2.srcs/sim_1/new/tb_decoder.v" Line 100
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_decoder_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_2/project_2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_decoder' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_2/project_2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_decoder_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_2/project_2.srcs/sources_1/new/decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_2/project_2.srcs/sim_1/new/tb_decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_decoder
+WARNING: [VRFC 10-2096] empty statement in sequential block [D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_2/project_2.srcs/sim_1/new/tb_decoder.v:37]
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_2/project_2.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado2018/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 417c80a95cea483e9174dba5146026ca --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_decoder_behav xil_defaultlib.tb_decoder xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.decoder
+Compiling module xil_defaultlib.tb_decoder
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_decoder_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_2/project_2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_decoder_behav -key {Behavioral:sim_1:Functional:tb_decoder} -tclbatch {tb_decoder.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source tb_decoder.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Error: 1101 demod fail
+Time: 95 ns  Iteration: 0  Process: /tb_decoder/Initial37_3  File: D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_2/project_2.srcs/sim_1/new/tb_decoder.v
+Error: 0011 demod fail
+Time: 195 ns  Iteration: 0  Process: /tb_decoder/Initial37_3  File: D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_2/project_2.srcs/sim_1/new/tb_decoder.v
+Error: 0110 demod fail
+Time: 295 ns  Iteration: 0  Process: /tb_decoder/Initial37_3  File: D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_2/project_2.srcs/sim_1/new/tb_decoder.v
+Error: 1100 demod fail
+Time: 395 ns  Iteration: 0  Process: /tb_decoder/Initial37_3  File: D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_2/project_2.srcs/sim_1/new/tb_decoder.v
+Error: 0101 demod fail
+Time: 495 ns  Iteration: 0  Process: /tb_decoder/Initial37_3  File: D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_2/project_2.srcs/sim_1/new/tb_decoder.v
+error detection success
+$finish called at time : 595 ns : File "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_2/project_2.srcs/sim_1/new/tb_decoder.v" Line 100
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_decoder_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_2/project_2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_decoder' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_2/project_2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_decoder_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_2/project_2.srcs/sources_1/new/decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_2/project_2.srcs/sim_1/new/tb_decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_decoder
+WARNING: [VRFC 10-2096] empty statement in sequential block [D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_2/project_2.srcs/sim_1/new/tb_decoder.v:37]
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_2/project_2.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado2018/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 417c80a95cea483e9174dba5146026ca --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_decoder_behav xil_defaultlib.tb_decoder xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.decoder
+Compiling module xil_defaultlib.tb_decoder
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_decoder_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_2/project_2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_decoder_behav -key {Behavioral:sim_1:Functional:tb_decoder} -tclbatch {tb_decoder.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source tb_decoder.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+1101 demod success
+0011 demod success
+0110 demod success
+1100 demod success
+0101 demod success
+error detection success
+$finish called at time : 595 ns : File "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_2/project_2.srcs/sim_1/new/tb_decoder.v" Line 100
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_decoder_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 864.953 ; gain = 0.758
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_2/project_2.runs/synth_1
+
+launch_runs synth_1 -jobs 4
+[Mon May  6 18:28:03 2024] Launched synth_1...
+Run output will be captured here: D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_2/project_2.runs/synth_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a35tcpg236-1
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_2/project_2.srcs/constrs_1/new/decoderConstraints.xdc]
+Finished Parsing XDC File [D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_2/project_2.srcs/constrs_1/new/decoderConstraints.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1141.172 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 1275.371 ; gain = 399.781
+report_utilization -name utilization_1
+launch_runs impl_1 -jobs 4
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1705.688 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1710.051 ; gain = 0.000
+[Mon May  6 18:29:43 2024] Launched impl_1...
+Run output will be captured here: D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_2/project_2.runs/impl_1/runme.log
+close_design
+open_run impl_1
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.047 . Memory (MB): peak = 1763.406 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.048 . Memory (MB): peak = 1763.406 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1763.406 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+report_utilization -name utilization_1
+launch_simulation -mode post-synthesis -type timing
+INFO: [Vivado 12-5682] Launching post-synthesis timing simulation in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_2/project_2.sim/sim_1/synth/timing/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a35tcpg236-1
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_2/project_2.srcs/constrs_1/new/decoderConstraints.xdc]
+Finished Parsing XDC File [D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_2/project_2.srcs/constrs_1/new/decoderConstraints.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2373.473 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [SIM-utils-24] Writing simulation netlist file for design 'synth_1'...
+INFO: [SIM-utils-25] write_verilog -mode timesim -nolib -sdf_anno true -force -file "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_2/project_2.sim/sim_1/synth/timing/xsim/tb_decoder_time_synth.v"
+INFO: [SIM-utils-27] Writing SDF file...
+INFO: [SIM-utils-28] write_sdf -mode timesim -process_corner slow -force -file "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_2/project_2.sim/sim_1/synth/timing/xsim/tb_decoder_time_synth.sdf"
+INFO: [SIM-utils-36] Netlist generated:D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_2/project_2.sim/sim_1/synth/timing/xsim/tb_decoder_time_synth.v
+INFO: [SIM-utils-37] SDF generated:D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_2/project_2.sim/sim_1/synth/timing/xsim/tb_decoder_time_synth.sdf
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_decoder' in fileset 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_2/project_2.sim/sim_1/synth/timing/xsim'
+"xvlog --incr --relax -prj tb_decoder_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_2/project_2.sim/sim_1/synth/timing/xsim/tb_decoder_time_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decoder
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_2/project_2.srcs/sim_1/new/tb_decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_decoder
+WARNING: [VRFC 10-2096] empty statement in sequential block [D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_2/project_2.srcs/sim_1/new/tb_decoder.v:37]
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_2/project_2.sim/sim_1/synth/timing/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado2018/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 417c80a95cea483e9174dba5146026ca --incr --debug typical --relax --mt 2 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot tb_decoder_time_synth -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.tb_decoder xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+INFO: [XSIM 43-3451] SDF backannotation process started with SDF file "tb_decoder_time_synth.sdf", for root module "tb_decoder/RXenDecoder_test".
+INFO: [XSIM 43-3452] SDF backannotation was successful for SDF file "tb_decoder_time_synth.sdf", for root module "tb_decoder/RXenDecoder_test".
+Time Resolution for simulation is 1ps
+Compiling module simprims_ver.IBUF
+Compiling module simprims_ver.LUT4
+Compiling module simprims_ver.x_lut3_mux8
+Compiling module simprims_ver.LUT3
+Compiling module simprims_ver.OBUF
+Compiling module simprims_ver.FDRE_default
+Compiling module simprims_ver.x_lut1_mux2
+Compiling module simprims_ver.LUT1
+Compiling module simprims_ver.BUFG
+Compiling module xil_defaultlib.decoder
+Compiling module xil_defaultlib.tb_decoder
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_decoder_time_synth
+
+****** Webtalk v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_2/project_2.sim/sim_1/synth/timing/xsim/xsim.dir/tb_decoder_time_synth/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Mon May  6 18:32:25 2024...
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_2/project_2.sim/sim_1/synth/timing/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_decoder_time_synth -key {Post-Synthesis:sim_1:Timing:tb_decoder} -tclbatch {tb_decoder.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source tb_decoder.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Error: 1101 demod fail
+Time: 95 ns  Iteration: 0  Process: /tb_decoder/Initial37_55  File: D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_2/project_2.srcs/sim_1/new/tb_decoder.v
+Error: 0011 demod fail
+Time: 195 ns  Iteration: 0  Process: /tb_decoder/Initial37_55  File: D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_2/project_2.srcs/sim_1/new/tb_decoder.v
+Error: 0110 demod fail
+Time: 295 ns  Iteration: 0  Process: /tb_decoder/Initial37_55  File: D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_2/project_2.srcs/sim_1/new/tb_decoder.v
+Error: 1100 demod fail
+Time: 395 ns  Iteration: 0  Process: /tb_decoder/Initial37_55  File: D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_2/project_2.srcs/sim_1/new/tb_decoder.v
+Error: 0101 demod fail
+Time: 495 ns  Iteration: 0  Process: /tb_decoder/Initial37_55  File: D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_2/project_2.srcs/sim_1/new/tb_decoder.v
+Error: error detection fail
+Time: 595 ns  Iteration: 0  Process: /tb_decoder/Initial37_55  File: D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_2/project_2.srcs/sim_1/new/tb_decoder.v
+$finish called at time : 595 ns : File "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_2/project_2.srcs/sim_1/new/tb_decoder.v" Line 100
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_decoder_time_synth' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:10 . Memory (MB): peak = 2388.199 ; gain = 14.727
+launch_simulation -mode post-implementation -type timing
+INFO: [Vivado 12-5682] Launching post-implementation timing simulation in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_2/project_2.sim/sim_1/impl/timing/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-31] Writing simulation netlist file for design 'impl_1'...
+INFO: [SIM-utils-32] write_verilog -mode timesim -nolib -sdf_anno true -force -file "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_2/project_2.sim/sim_1/impl/timing/xsim/tb_decoder_time_impl.v"
+INFO: [SIM-utils-34] Writing SDF file...
+INFO: [SIM-utils-35] write_sdf -mode timesim -process_corner slow -force -file "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_2/project_2.sim/sim_1/impl/timing/xsim/tb_decoder_time_impl.sdf"
+INFO: [SIM-utils-36] Netlist generated:D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_2/project_2.sim/sim_1/impl/timing/xsim/tb_decoder_time_impl.v
+INFO: [SIM-utils-37] SDF generated:D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_2/project_2.sim/sim_1/impl/timing/xsim/tb_decoder_time_impl.sdf
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_decoder' in fileset 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_2/project_2.sim/sim_1/impl/timing/xsim'
+"xvlog --incr --relax -prj tb_decoder_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_2/project_2.sim/sim_1/impl/timing/xsim/tb_decoder_time_impl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decoder
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_2/project_2.srcs/sim_1/new/tb_decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_decoder
+WARNING: [VRFC 10-2096] empty statement in sequential block [D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_2/project_2.srcs/sim_1/new/tb_decoder.v:37]
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_2/project_2.sim/sim_1/impl/timing/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado2018/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 417c80a95cea483e9174dba5146026ca --incr --debug typical --relax --mt 2 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot tb_decoder_time_impl -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.tb_decoder xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+INFO: [XSIM 43-3451] SDF backannotation process started with SDF file "tb_decoder_time_impl.sdf", for root module "tb_decoder/RXenDecoder_test".
+INFO: [XSIM 43-3452] SDF backannotation was successful for SDF file "tb_decoder_time_impl.sdf", for root module "tb_decoder/RXenDecoder_test".
+Time Resolution for simulation is 1ps
+Compiling module simprims_ver.IBUF
+Compiling module simprims_ver.LUT4
+Compiling module simprims_ver.x_lut3_mux8
+Compiling module simprims_ver.LUT3
+Compiling module simprims_ver.OBUF
+Compiling module simprims_ver.FDRE_default
+Compiling module simprims_ver.x_lut1_mux2
+Compiling module simprims_ver.LUT1
+Compiling module simprims_ver.BUFG
+Compiling module xil_defaultlib.decoder
+Compiling module xil_defaultlib.tb_decoder
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_decoder_time_impl
+
+****** Webtalk v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_2/project_2.sim/sim_1/impl/timing/xsim/xsim.dir/tb_decoder_time_impl/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Mon May  6 18:33:24 2024...
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_2/project_2.sim/sim_1/impl/timing/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_decoder_time_impl -key {Post-Implementation:sim_1:Timing:tb_decoder} -tclbatch {tb_decoder.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source tb_decoder.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Error: 1101 demod fail
+Time: 95 ns  Iteration: 0  Process: /tb_decoder/Initial37_55  File: D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_2/project_2.srcs/sim_1/new/tb_decoder.v
+Error: 0011 demod fail
+Time: 195 ns  Iteration: 0  Process: /tb_decoder/Initial37_55  File: D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_2/project_2.srcs/sim_1/new/tb_decoder.v
+Error: 0110 demod fail
+Time: 295 ns  Iteration: 0  Process: /tb_decoder/Initial37_55  File: D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_2/project_2.srcs/sim_1/new/tb_decoder.v
+Error: 1100 demod fail
+Time: 395 ns  Iteration: 0  Process: /tb_decoder/Initial37_55  File: D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_2/project_2.srcs/sim_1/new/tb_decoder.v
+Error: 0101 demod fail
+Time: 495 ns  Iteration: 0  Process: /tb_decoder/Initial37_55  File: D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_2/project_2.srcs/sim_1/new/tb_decoder.v
+Error: error detection fail
+Time: 595 ns  Iteration: 0  Process: /tb_decoder/Initial37_55  File: D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_2/project_2.srcs/sim_1/new/tb_decoder.v
+$finish called at time : 595 ns : File "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_2/project_2.srcs/sim_1/new/tb_decoder.v" Line 100
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_decoder_time_impl' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 2388.199 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+current_sim simulation_7
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon May  6 18:40:43 2024...

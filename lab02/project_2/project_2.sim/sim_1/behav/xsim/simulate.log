@@ -1,0 +1,9 @@
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+1101 demod success
+0011 demod success
+0110 demod success
+1100 demod success
+0101 demod success
+error detection success
+$finish called at time : 595 ns : File "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_2/project_2.srcs/sim_1/new/tb_decoder.v" Line 100

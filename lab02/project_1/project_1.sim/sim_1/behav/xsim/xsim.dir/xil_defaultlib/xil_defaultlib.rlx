@@ -1,0 +1,9 @@
+0.6
+2018.3
+Dec  7 2018
+00:33:28
+D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_1/project_1.sim/sim_1/behav/xsim/glbl.v,1544155481,verilog,,,,glbl,,,,,,,,
+D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_1/project_1.srcs/sim_1/new/RXenDecoder.v,1714661833,verilog,,D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_1/project_1.srcs/sim_1/new/tb_RXenDeocder.v,,RXenDecoder,,,,,,,,
+D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_1/project_1.srcs/sim_1/new/shiftReg.v,1714400777,verilog,,D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_1/project_1.srcs/sim_1/new/tb_shiftReg.v,,shiftReg,,,,,,,,
+D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_1/project_1.srcs/sim_1/new/tb_RXenDeocder.v,1714661674,verilog,,,,tb_RXenDeocder,,,,,,,,
+D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab02/project_1/project_1.srcs/sim_1/new/tb_shiftReg.v,1714305843,verilog,,,,tb_shiftReg,,,,,,,,
