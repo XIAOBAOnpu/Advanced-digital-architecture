@@ -1,0 +1,17 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Mon May  6 18:02:34 2024
+# Process ID: 10864
+# Current directory: D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab01/Lab01_21
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14708 D:\BRUFACE\MA2\S02\advancedDigitalArchi\Ex\lab01\Lab01_21\Lab01_21.xpr
+# Log file: D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab01/Lab01_21/vivado.log
+# Journal file: D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab01/Lab01_21\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab01/Lab01_21/Lab01_21.xpr
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+close_design
+open_run synth_1 -name synth_1

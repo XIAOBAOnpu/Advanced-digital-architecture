@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab01/Lab01_21/Lab01_21.srcs/sim_1/new/CC_11.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CC_11
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab01/Lab01_21/Lab01_21.srcs/sim_1/new/top_level.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_level
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab01/Lab01_21/Lab01_21.srcs/sim_1/new/tb_top_level.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_top_level

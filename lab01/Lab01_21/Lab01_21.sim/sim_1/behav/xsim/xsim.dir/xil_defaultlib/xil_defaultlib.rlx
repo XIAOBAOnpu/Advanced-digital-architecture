@@ -1,0 +1,11 @@
+0.6
+2018.3
+Dec  7 2018
+00:33:28
+D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab01/Lab01_21/Lab01_21.sim/sim_1/behav/xsim/glbl.v,1544155481,verilog,,,,glbl,,,,,,,,
+D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab01/Lab01_21/Lab01_21.srcs/sim_1/new/BCD2Gray.v,1714394672,verilog,,D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab01/Lab01_21/Lab01_21.srcs/sim_1/new/tb_BCD2Gray.v,,BCD2Gray,,,,,,,,
+D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab01/Lab01_21/Lab01_21.srcs/sim_1/new/CC_11.v,1714394595,verilog,,D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab01/Lab01_21/Lab01_21.srcs/sim_1/new/top_level.v,,CC_11,,,,,,,,
+D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab01/Lab01_21/Lab01_21.srcs/sim_1/new/tb_BCD2Gray.v,1714300173,verilog,,,,tb_BCD2Gray,,,,,,,,
+D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab01/Lab01_21/Lab01_21.srcs/sim_1/new/tb_CC_11.v,1714394211,verilog,,,,tb_CC_11,,,,,,,,
+D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab01/Lab01_21/Lab01_21.srcs/sim_1/new/tb_top_level.v,1714298424,verilog,,,,tb_top_level,,,,,,,,
+D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab01/Lab01_21/Lab01_21.srcs/sim_1/new/top_level.v,1714395290,verilog,,D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab01/Lab01_21/Lab01_21.srcs/sim_1/new/tb_top_level.v,,top_level,,,,,,,,
