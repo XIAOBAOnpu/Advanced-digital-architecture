@@ -1,0 +1,4 @@
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+Test success...
+$finish called at time : 45 ns : File "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/seriesALU/seriesALU.srcs/sim_1/new/tb_SeriesALU.v" Line 66

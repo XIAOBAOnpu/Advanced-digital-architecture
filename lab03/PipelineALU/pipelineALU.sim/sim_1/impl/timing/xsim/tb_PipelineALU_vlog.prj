@@ -1,0 +1,7 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"tb_PipelineALU_time_impl.v" \
+"../../../../../pipelineALU.srcs/sim_1/new/tb_PipelineALU.v" \
+
+# Do not sort compile order
+nosort

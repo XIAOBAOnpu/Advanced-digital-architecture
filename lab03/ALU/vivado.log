@@ -1,0 +1,2456 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Mon May 13 14:16:41 2024
+# Process ID: 22196
+# Current directory: D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent26612 D:\BRUFACE\MA2\S02\advancedDigitalArchi\Ex\lab03\ALU\ALU.xpr
+# Log file: D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/vivado.log
+# Journal file: D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado2018/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 679.543 ; gain = 114.508
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_simpleALU' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_simpleALU_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sources_1/new/SimpleALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SimpleALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sim_1/new/tb_simpleALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_simpleALU
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado2018/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 991de195ab4e43b2b50e4c777bf0086e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_simpleALU_behav xil_defaultlib.tb_simpleALU xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.SimpleALU
+Compiling module xil_defaultlib.tb_simpleALU
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_simpleALU_behav
+
+****** Webtalk v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim/xsim.dir/tb_simpleALU_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Mon May 13 14:18:06 2024...
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_simpleALU_behav -key {Behavioral:sim_1:Functional:tb_simpleALU} -tclbatch {tb_simpleALU.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source tb_simpleALU.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+All tests completed.
+$finish called at time : 165 ns : File "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sim_1/new/tb_simpleALU.v" Line 89
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_simpleALU_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:09 . Memory (MB): peak = 779.594 ; gain = 45.512
+close [ open D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sources_1/new/SeriesALU.v w ]
+add_files D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sources_1/new/SeriesALU.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sim_1/new/tb_SeriesALU.v w ]
+add_files -fileset sim_1 D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sim_1/new/tb_SeriesALU.v
+update_compile_order -fileset sim_1
+set_property top tb_SeriesALU [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_SeriesALU' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_SeriesALU_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sources_1/new/SeriesALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SeriesALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sim_1/new/tb_SeriesALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_SeriesALU
+WARNING: [VRFC 10-986] literal value truncated to fit in 8 bits [D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sim_1/new/tb_SeriesALU.v:48]
+WARNING: [VRFC 10-986] literal value truncated to fit in 3 bits [D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sim_1/new/tb_SeriesALU.v:49]
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado2018/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 991de195ab4e43b2b50e4c777bf0086e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_SeriesALU_behav xil_defaultlib.tb_SeriesALU xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-2989] 'Dout' is not declared [D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sim_1/new/tb_SeriesALU.v:53]
+WARNING: [VRFC 10-3283] element index 3 into 'cout' is out of bounds [D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sources_1/new/SeriesALU.v:34]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_SeriesALU' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_SeriesALU_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sources_1/new/SeriesALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SeriesALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sources_1/new/SimpleALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SimpleALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sim_1/new/tb_SeriesALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_SeriesALU
+WARNING: [VRFC 10-986] literal value truncated to fit in 8 bits [D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sim_1/new/tb_SeriesALU.v:48]
+WARNING: [VRFC 10-986] literal value truncated to fit in 3 bits [D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sim_1/new/tb_SeriesALU.v:49]
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado2018/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 991de195ab4e43b2b50e4c777bf0086e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_SeriesALU_behav xil_defaultlib.tb_SeriesALU xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-2989] 'Dout' is not declared [D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sim_1/new/tb_SeriesALU.v:53]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_SeriesALU' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_SeriesALU_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sources_1/new/SeriesALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SeriesALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sources_1/new/SimpleALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SimpleALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sim_1/new/tb_SeriesALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_SeriesALU
+WARNING: [VRFC 10-986] literal value truncated to fit in 8 bits [D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sim_1/new/tb_SeriesALU.v:48]
+WARNING: [VRFC 10-986] literal value truncated to fit in 3 bits [D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sim_1/new/tb_SeriesALU.v:49]
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado2018/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 991de195ab4e43b2b50e4c777bf0086e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_SeriesALU_behav xil_defaultlib.tb_SeriesALU xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-3236] concurrent assignment to a non-net 'cout' is not permitted [D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sources_1/new/SeriesALU.v:32]
+ERROR: [VRFC 10-3236] concurrent assignment to a non-net 'cout' is not permitted [D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sources_1/new/SeriesALU.v:33]
+ERROR: [VRFC 10-3236] concurrent assignment to a non-net 'out' is not permitted [D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sources_1/new/SeriesALU.v:34]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_SeriesALU' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_SeriesALU_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sources_1/new/SeriesALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SeriesALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sources_1/new/SimpleALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SimpleALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sim_1/new/tb_SeriesALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_SeriesALU
+WARNING: [VRFC 10-986] literal value truncated to fit in 8 bits [D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sim_1/new/tb_SeriesALU.v:48]
+WARNING: [VRFC 10-986] literal value truncated to fit in 3 bits [D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sim_1/new/tb_SeriesALU.v:49]
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado2018/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 991de195ab4e43b2b50e4c777bf0086e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_SeriesALU_behav xil_defaultlib.tb_SeriesALU xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.SimpleALU
+Compiling module xil_defaultlib.SeriesALU
+Compiling module xil_defaultlib.tb_SeriesALU
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_SeriesALU_behav
+
+****** Webtalk v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim/xsim.dir/tb_SeriesALU_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Mon May 13 14:53:11 2024...
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_SeriesALU_behav -key {Behavioral:sim_1:Functional:tb_SeriesALU} -tclbatch {tb_SeriesALU.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source tb_SeriesALU.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Error: Test failed for ADD. Expected b11110001, b110, got 01110001, 001
+Time: 15 ns  Iteration: 0  Process: /tb_SeriesALU/Initial41_3  File: D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sim_1/new/tb_SeriesALU.v
+$finish called at time : 15 ns : File "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sim_1/new/tb_SeriesALU.v" Line 54
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_SeriesALU_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 780.336 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_SeriesALU' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_SeriesALU_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sources_1/new/SeriesALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SeriesALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sources_1/new/SimpleALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SimpleALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sim_1/new/tb_SeriesALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_SeriesALU
+WARNING: [VRFC 10-986] literal value truncated to fit in 8 bits [D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sim_1/new/tb_SeriesALU.v:48]
+WARNING: [VRFC 10-986] literal value truncated to fit in 3 bits [D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sim_1/new/tb_SeriesALU.v:49]
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado2018/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 991de195ab4e43b2b50e4c777bf0086e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_SeriesALU_behav xil_defaultlib.tb_SeriesALU xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.SimpleALU
+Compiling module xil_defaultlib.SeriesALU
+Compiling module xil_defaultlib.tb_SeriesALU
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_SeriesALU_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_SeriesALU_behav -key {Behavioral:sim_1:Functional:tb_SeriesALU} -tclbatch {tb_SeriesALU.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source tb_SeriesALU.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Error: Test failed for ADD. Expected b11110001, b100, got 01110001, 001
+Time: 15 ns  Iteration: 0  Process: /tb_SeriesALU/Initial41_3  File: D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sim_1/new/tb_SeriesALU.v
+$finish called at time : 15 ns : File "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sim_1/new/tb_SeriesALU.v" Line 54
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_SeriesALU_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_SeriesALU' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_SeriesALU_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sources_1/new/SeriesALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SeriesALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sources_1/new/SimpleALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SimpleALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sim_1/new/tb_SeriesALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_SeriesALU
+WARNING: [VRFC 10-986] literal value truncated to fit in 8 bits [D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sim_1/new/tb_SeriesALU.v:48]
+WARNING: [VRFC 10-986] literal value truncated to fit in 3 bits [D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sim_1/new/tb_SeriesALU.v:49]
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado2018/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 991de195ab4e43b2b50e4c777bf0086e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_SeriesALU_behav xil_defaultlib.tb_SeriesALU xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.SimpleALU
+Compiling module xil_defaultlib.SeriesALU
+Compiling module xil_defaultlib.tb_SeriesALU
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_SeriesALU_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_SeriesALU_behav -key {Behavioral:sim_1:Functional:tb_SeriesALU} -tclbatch {tb_SeriesALU.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source tb_SeriesALU.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Error: Test failed for ADD. Expected b11110001, b100, got 01110000, 001
+Time: 15 ns  Iteration: 0  Process: /tb_SeriesALU/Initial41_3  File: D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sim_1/new/tb_SeriesALU.v
+$finish called at time : 15 ns : File "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sim_1/new/tb_SeriesALU.v" Line 54
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_SeriesALU_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_SeriesALU' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_SeriesALU_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sources_1/new/SeriesALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SeriesALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sources_1/new/SimpleALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SimpleALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sim_1/new/tb_SeriesALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_SeriesALU
+WARNING: [VRFC 10-986] literal value truncated to fit in 8 bits [D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sim_1/new/tb_SeriesALU.v:48]
+WARNING: [VRFC 10-986] literal value truncated to fit in 3 bits [D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sim_1/new/tb_SeriesALU.v:49]
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado2018/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 991de195ab4e43b2b50e4c777bf0086e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_SeriesALU_behav xil_defaultlib.tb_SeriesALU xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.SimpleALU
+Compiling module xil_defaultlib.SeriesALU
+Compiling module xil_defaultlib.tb_SeriesALU
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_SeriesALU_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_SeriesALU_behav -key {Behavioral:sim_1:Functional:tb_SeriesALU} -tclbatch {tb_SeriesALU.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source tb_SeriesALU.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Error: Test failed for ADD. Expected b11110001, b100, got 11110000, 001
+Time: 15 ns  Iteration: 0  Process: /tb_SeriesALU/Initial41_3  File: D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sim_1/new/tb_SeriesALU.v
+$finish called at time : 15 ns : File "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sim_1/new/tb_SeriesALU.v" Line 56
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_SeriesALU_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_SeriesALU' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_SeriesALU_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sources_1/new/SeriesALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SeriesALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sources_1/new/SimpleALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SimpleALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sim_1/new/tb_SeriesALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_SeriesALU
+WARNING: [VRFC 10-986] literal value truncated to fit in 8 bits [D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sim_1/new/tb_SeriesALU.v:48]
+WARNING: [VRFC 10-986] literal value truncated to fit in 3 bits [D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sim_1/new/tb_SeriesALU.v:49]
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado2018/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 991de195ab4e43b2b50e4c777bf0086e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_SeriesALU_behav xil_defaultlib.tb_SeriesALU xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.SimpleALU
+Compiling module xil_defaultlib.SeriesALU
+Compiling module xil_defaultlib.tb_SeriesALU
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_SeriesALU_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_SeriesALU_behav -key {Behavioral:sim_1:Functional:tb_SeriesALU} -tclbatch {tb_SeriesALU.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source tb_SeriesALU.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Error: Test failed for ADD. Expected b11110001, b100, got 11110000, 001
+Time: 10 ns  Iteration: 0  Process: /tb_SeriesALU/Initial41_3  File: D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sim_1/new/tb_SeriesALU.v
+$finish called at time : 10 ns : File "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sim_1/new/tb_SeriesALU.v" Line 56
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_SeriesALU_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+close [ open D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sources_1/new/PipelineALU.v w ]
+add_files D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sources_1/new/PipelineALU.v
+update_compile_order -fileset sources_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sim_1/new/tb_PipelineALU.v w ]
+add_files -fileset sim_1 D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sim_1/new/tb_PipelineALU.v
+update_compile_order -fileset sim_1
+set_property top tb_PipelineALU [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_PipelineALU' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_PipelineALU_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sources_1/new/PipelineALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PipelineALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sim_1/new/tb_PipelineALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_PipelineALU
+WARNING: [VRFC 10-986] literal value truncated to fit in 8 bits [D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sim_1/new/tb_PipelineALU.v:59]
+WARNING: [VRFC 10-986] literal value truncated to fit in 3 bits [D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sim_1/new/tb_PipelineALU.v:60]
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado2018/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 991de195ab4e43b2b50e4c777bf0086e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_PipelineALU_behav xil_defaultlib.tb_PipelineALU xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-3180] cannot find port 'Cout' on this module [D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sources_1/new/PipelineALU.v:37]
+ERROR: [VRFC 10-3427] illegal recursive design instantiation, instance name 'PipelineALU1' [D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sources_1/new/PipelineALU.v:37]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_PipelineALU' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_PipelineALU_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sources_1/new/PipelineALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PipelineALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sim_1/new/tb_PipelineALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_PipelineALU
+WARNING: [VRFC 10-986] literal value truncated to fit in 8 bits [D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sim_1/new/tb_PipelineALU.v:59]
+WARNING: [VRFC 10-986] literal value truncated to fit in 3 bits [D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sim_1/new/tb_PipelineALU.v:60]
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado2018/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 991de195ab4e43b2b50e4c777bf0086e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_PipelineALU_behav xil_defaultlib.tb_PipelineALU xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-3180] cannot find port 'Cout' on this module [D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sources_1/new/PipelineALU.v:37]
+ERROR: [VRFC 10-3427] illegal recursive design instantiation, instance name 'SimpleALU1' [D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sources_1/new/PipelineALU.v:37]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_PipelineALU' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_PipelineALU_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sources_1/new/PipelineALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PipelineALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sources_1/new/SimpleALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SimpleALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sim_1/new/tb_PipelineALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_PipelineALU
+WARNING: [VRFC 10-986] literal value truncated to fit in 8 bits [D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sim_1/new/tb_PipelineALU.v:59]
+WARNING: [VRFC 10-986] literal value truncated to fit in 3 bits [D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sim_1/new/tb_PipelineALU.v:60]
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado2018/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 991de195ab4e43b2b50e4c777bf0086e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_PipelineALU_behav xil_defaultlib.tb_PipelineALU xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.SimpleALU
+Compiling module xil_defaultlib.PipelineALU
+Compiling module xil_defaultlib.tb_PipelineALU
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_PipelineALU_behav
+
+****** Webtalk v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim/xsim.dir/tb_PipelineALU_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Mon May 13 15:36:55 2024...
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_PipelineALU_behav -key {Behavioral:sim_1:Functional:tb_PipelineALU} -tclbatch {tb_PipelineALU.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source tb_PipelineALU.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Error: Test failed for ADD. Expected b11110001, b100, got 00000000, 000
+Time: 40 ns  Iteration: 0  Process: /tb_PipelineALU/Initial49_5  File: D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sim_1/new/tb_PipelineALU.v
+$finish called at time : 40 ns : File "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sim_1/new/tb_PipelineALU.v" Line 68
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_PipelineALU_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 819.750 ; gain = 8.039
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_PipelineALU' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_PipelineALU_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sources_1/new/PipelineALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PipelineALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sources_1/new/SimpleALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SimpleALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sim_1/new/tb_PipelineALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_PipelineALU
+WARNING: [VRFC 10-986] literal value truncated to fit in 8 bits [D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sim_1/new/tb_PipelineALU.v:60]
+WARNING: [VRFC 10-986] literal value truncated to fit in 3 bits [D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sim_1/new/tb_PipelineALU.v:61]
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado2018/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 991de195ab4e43b2b50e4c777bf0086e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_PipelineALU_behav xil_defaultlib.tb_PipelineALU xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.SimpleALU
+Compiling module xil_defaultlib.PipelineALU
+Compiling module xil_defaultlib.tb_PipelineALU
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_PipelineALU_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_PipelineALU_behav -key {Behavioral:sim_1:Functional:tb_PipelineALU} -tclbatch {tb_PipelineALU.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source tb_PipelineALU.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Error: Test failed for ADD. Expected b11110001, b100, got 00000000, xxx
+Time: 40 ns  Iteration: 0  Process: /tb_PipelineALU/Initial50_5  File: D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sim_1/new/tb_PipelineALU.v
+$finish called at time : 40 ns : File "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sim_1/new/tb_PipelineALU.v" Line 69
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_PipelineALU_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 826.215 ; gain = 5.285
+run 100 ns
+update_compile_order -fileset sim_1
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_PipelineALU' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_PipelineALU_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sources_1/new/PipelineALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PipelineALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sources_1/new/SeriesALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SeriesALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sources_1/new/SimpleALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SimpleALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sim_1/new/tb_PipelineALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_PipelineALU90
+WARNING: [VRFC 10-986] literal value truncated to fit in 8 bits [D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sim_1/new/tb_PipelineALU.v:60]
+WARNING: [VRFC 10-986] literal value truncated to fit in 3 bits [D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sim_1/new/tb_PipelineALU.v:61]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sim_1/new/tb_SeriesALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_SeriesALU
+WARNING: [VRFC 10-986] literal value truncated to fit in 8 bits [D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sim_1/new/tb_SeriesALU.v:48]
+WARNING: [VRFC 10-986] literal value truncated to fit in 3 bits [D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sim_1/new/tb_SeriesALU.v:49]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sim_1/new/tb_simpleALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_simpleALU
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado2018/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 991de195ab4e43b2b50e4c777bf0086e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_PipelineALU_behav xil_defaultlib.tb_PipelineALU xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.SimpleALU
+Compiling module xil_defaultlib.PipelineALU
+Compiling module xil_defaultlib.tb_PipelineALU
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_PipelineALU_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_PipelineALU_behav -key {Behavioral:sim_1:Functional:tb_PipelineALU} -tclbatch {tb_PipelineALU.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source tb_PipelineALU.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Error: Test failed for ADD. Expected b11110001, b100, got 00000000, xxx
+Time: 40 ns  Iteration: 0  Process: /tb_PipelineALU/Initial50_5  File: D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sim_1/new/tb_PipelineALU.v
+$finish called at time : 40 ns : File "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sim_1/new/tb_PipelineALU.v" Line 69
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_PipelineALU_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 842.176 ; gain = 0.000
+run 100 ns
+set_property top tb_PipelineALU90 [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+set_property top tb_PipelineALU [get_filesets sim_1]
+update_compile_order -fileset sim_1
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_PipelineALU' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_PipelineALU_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sources_1/new/PipelineALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PipelineALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sources_1/new/SimpleALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SimpleALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sim_1/new/tb_PipelineALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_PipelineALU
+WARNING: [VRFC 10-986] literal value truncated to fit in 8 bits [D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sim_1/new/tb_PipelineALU.v:60]
+WARNING: [VRFC 10-986] literal value truncated to fit in 3 bits [D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sim_1/new/tb_PipelineALU.v:61]
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado2018/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 991de195ab4e43b2b50e4c777bf0086e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_PipelineALU_behav xil_defaultlib.tb_PipelineALU xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.SimpleALU
+Compiling module xil_defaultlib.PipelineALU
+Compiling module xil_defaultlib.tb_PipelineALU
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_PipelineALU_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_PipelineALU_behav -key {Behavioral:sim_1:Functional:tb_PipelineALU} -tclbatch {tb_PipelineALU.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source tb_PipelineALU.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Error: Test failed for ADD. Expected b11110001, b100, got xxxxxxxx, xxx
+Time: 50 ns  Iteration: 0  Process: /tb_PipelineALU/Initial50_5  File: D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sim_1/new/tb_PipelineALU.v
+$finish called at time : 50 ns : File "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sim_1/new/tb_PipelineALU.v" Line 69
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_PipelineALU_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+run 100 ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_PipelineALU' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_PipelineALU_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sources_1/new/PipelineALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PipelineALU
+INFO: [VRFC 10-2458] undeclared symbol in1_1, assumed default net type wire [D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sources_1/new/PipelineALU.v:41]
+INFO: [VRFC 10-2458] undeclared symbol in1_2, assumed default net type wire [D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sources_1/new/PipelineALU.v:41]
+INFO: [VRFC 10-2458] undeclared symbol out1, assumed default net type wire [D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sources_1/new/PipelineALU.v:41]
+INFO: [VRFC 10-2458] undeclared symbol in2_1, assumed default net type wire [D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sources_1/new/PipelineALU.v:42]
+INFO: [VRFC 10-2458] undeclared symbol out2, assumed default net type wire [D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sources_1/new/PipelineALU.v:42]
+INFO: [VRFC 10-2458] undeclared symbol in3_1, assumed default net type wire [D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sources_1/new/PipelineALU.v:43]
+ERROR: [VRFC 10-2989] 'FFout' is not declared [D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sources_1/new/PipelineALU.v:49]
+ERROR: [VRFC 10-2989] 'FFcout' is not declared [D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sources_1/new/PipelineALU.v:50]
+ERROR: [VRFC 10-1280] procedural assignment to a non-register in1_1 is not permitted, left-hand side should be reg/integer/time/genvar [D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sources_1/new/PipelineALU.v:52]
+ERROR: [VRFC 10-2989] 'FFin1' is not declared [D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sources_1/new/PipelineALU.v:52]
+ERROR: [VRFC 10-1280] procedural assignment to a non-register in1_2 is not permitted, left-hand side should be reg/integer/time/genvar [D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sources_1/new/PipelineALU.v:53]
+ERROR: [VRFC 10-2989] 'FFin2' is not declared [D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sources_1/new/PipelineALU.v:53]
+ERROR: [VRFC 10-1280] procedural assignment to a non-register in2_1 is not permitted, left-hand side should be reg/integer/time/genvar [D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sources_1/new/PipelineALU.v:54]
+ERROR: [VRFC 10-2989] 'FFin3' is not declared [D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sources_1/new/PipelineALU.v:54]
+ERROR: [VRFC 10-1280] procedural assignment to a non-register in3_1 is not permitted, left-hand side should be reg/integer/time/genvar [D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sources_1/new/PipelineALU.v:55]
+ERROR: [VRFC 10-2989] 'FFin4' is not declared [D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sources_1/new/PipelineALU.v:55]
+ERROR: [VRFC 10-1280] procedural assignment to a non-register cin is not permitted, left-hand side should be reg/integer/time/genvar [D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sources_1/new/PipelineALU.v:56]
+ERROR: [VRFC 10-2989] 'FFcin' is not declared [D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sources_1/new/PipelineALU.v:56]
+ERROR: [VRFC 10-2865] module 'PipelineALU' ignored due to previous errors [D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sources_1/new/PipelineALU.v:23]
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+set_property top tb_SeriesALU [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+current_sim simulation_6
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_SeriesALU' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_SeriesALU_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sources_1/new/SeriesALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SeriesALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sources_1/new/SimpleALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SimpleALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sim_1/new/tb_SeriesALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_SeriesALU
+WARNING: [VRFC 10-986] literal value truncated to fit in 3 bits [D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sim_1/new/tb_SeriesALU.v:49]
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado2018/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 991de195ab4e43b2b50e4c777bf0086e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_SeriesALU_behav xil_defaultlib.tb_SeriesALU xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.SimpleALU
+Compiling module xil_defaultlib.SeriesALU
+Compiling module xil_defaultlib.tb_SeriesALU
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_SeriesALU_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_SeriesALU_behav -key {Behavioral:sim_1:Functional:tb_SeriesALU} -tclbatch {tb_SeriesALU.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source tb_SeriesALU.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Error: Test failed for ADD. Expected b11110001, b100, got 01110000, 001
+Time: 10 ns  Iteration: 0  Process: /tb_SeriesALU/Initial41_3  File: D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sim_1/new/tb_SeriesALU.v
+$finish called at time : 10 ns : File "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sim_1/new/tb_SeriesALU.v" Line 56
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_SeriesALU_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_SeriesALU' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_SeriesALU_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sources_1/new/SeriesALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SeriesALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sources_1/new/SimpleALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SimpleALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sim_1/new/tb_SeriesALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_SeriesALU
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado2018/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 991de195ab4e43b2b50e4c777bf0086e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_SeriesALU_behav xil_defaultlib.tb_SeriesALU xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.SimpleALU
+Compiling module xil_defaultlib.SeriesALU
+Compiling module xil_defaultlib.tb_SeriesALU
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_SeriesALU_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_SeriesALU_behav -key {Behavioral:sim_1:Functional:tb_SeriesALU} -tclbatch {tb_SeriesALU.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source tb_SeriesALU.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Error: Test failed for ADD. Expected b11110001, b100, got 01110000, 001
+Time: 10 ns  Iteration: 0  Process: /tb_SeriesALU/Initial41_3  File: D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sim_1/new/tb_SeriesALU.v
+$finish called at time : 10 ns : File "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sim_1/new/tb_SeriesALU.v" Line 56
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_SeriesALU_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_SeriesALU' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_SeriesALU_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sources_1/new/SeriesALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SeriesALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sources_1/new/SimpleALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SimpleALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sim_1/new/tb_SeriesALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_SeriesALU
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado2018/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 991de195ab4e43b2b50e4c777bf0086e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_SeriesALU_behav xil_defaultlib.tb_SeriesALU xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.SimpleALU
+Compiling module xil_defaultlib.SeriesALU
+Compiling module xil_defaultlib.tb_SeriesALU
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_SeriesALU_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_SeriesALU_behav -key {Behavioral:sim_1:Functional:tb_SeriesALU} -tclbatch {tb_SeriesALU.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source tb_SeriesALU.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Error: Test failed for ADD. Expected b01110001, b001, got 01110000, 001
+Time: 10 ns  Iteration: 0  Process: /tb_SeriesALU/Initial41_3  File: D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sim_1/new/tb_SeriesALU.v
+$finish called at time : 10 ns : File "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sim_1/new/tb_SeriesALU.v" Line 56
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_SeriesALU_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_SeriesALU' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_SeriesALU_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sources_1/new/SeriesALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SeriesALU
+ERROR: [VRFC 10-1412] syntax error near $display [D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sources_1/new/SeriesALU.v:33]
+ERROR: [VRFC 10-2865] module 'SeriesALU' ignored due to previous errors [D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sources_1/new/SeriesALU.v:23]
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_SeriesALU' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_SeriesALU_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sources_1/new/SeriesALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SeriesALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sources_1/new/SimpleALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SimpleALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sim_1/new/tb_SeriesALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_SeriesALU
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado2018/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 991de195ab4e43b2b50e4c777bf0086e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_SeriesALU_behav xil_defaultlib.tb_SeriesALU xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.SimpleALU
+Compiling module xil_defaultlib.SeriesALU
+Compiling module xil_defaultlib.tb_SeriesALU
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_SeriesALU_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_SeriesALU_behav -key {Behavioral:sim_1:Functional:tb_SeriesALU} -tclbatch {tb_SeriesALU.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source tb_SeriesALU.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Error: Test failed for ADD. Expected b01110001, b001, got 01110000, 001
+Time: 10 ns  Iteration: 0  Process: /tb_SeriesALU/Initial41_3  File: D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sim_1/new/tb_SeriesALU.v
+$finish called at time : 10 ns : File "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sim_1/new/tb_SeriesALU.v" Line 56
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_SeriesALU_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_SeriesALU' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_SeriesALU_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sources_1/new/SeriesALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SeriesALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sources_1/new/SimpleALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SimpleALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sim_1/new/tb_SeriesALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_SeriesALU
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado2018/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 991de195ab4e43b2b50e4c777bf0086e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_SeriesALU_behav xil_defaultlib.tb_SeriesALU xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 1 for port 'cout' [D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sim_1/new/tb_SeriesALU.v:37]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.SimpleALU
+Compiling module xil_defaultlib.SeriesALU
+Compiling module xil_defaultlib.tb_SeriesALU
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_SeriesALU_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_SeriesALU_behav -key {Behavioral:sim_1:Functional:tb_SeriesALU} -tclbatch {tb_SeriesALU.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source tb_SeriesALU.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Error: Test failed for ADD. Expected b01110001, b001, got 01110000, zz0
+Time: 10 ns  Iteration: 0  Process: /tb_SeriesALU/Initial41_3  File: D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sim_1/new/tb_SeriesALU.v
+$finish called at time : 10 ns : File "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sim_1/new/tb_SeriesALU.v" Line 56
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_SeriesALU_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_SeriesALU' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_SeriesALU_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sources_1/new/SeriesALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SeriesALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sources_1/new/SimpleALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SimpleALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sim_1/new/tb_SeriesALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_SeriesALU
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado2018/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 991de195ab4e43b2b50e4c777bf0086e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_SeriesALU_behav xil_defaultlib.tb_SeriesALU xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.SimpleALU
+Compiling module xil_defaultlib.SeriesALU
+Compiling module xil_defaultlib.tb_SeriesALU
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_SeriesALU_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_SeriesALU_behav -key {Behavioral:sim_1:Functional:tb_SeriesALU} -tclbatch {tb_SeriesALU.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source tb_SeriesALU.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Error: Test failed for ADD. Expected b01110001, b001, got 01110000, 001
+Time: 10 ns  Iteration: 0  Process: /tb_SeriesALU/Initial41_3  File: D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sim_1/new/tb_SeriesALU.v
+$finish called at time : 10 ns : File "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sim_1/new/tb_SeriesALU.v" Line 56
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_SeriesALU_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_SeriesALU' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_SeriesALU_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sources_1/new/SeriesALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SeriesALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sources_1/new/SimpleALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SimpleALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sim_1/new/tb_SeriesALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_SeriesALU
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado2018/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 991de195ab4e43b2b50e4c777bf0086e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_SeriesALU_behav xil_defaultlib.tb_SeriesALU xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.SimpleALU
+Compiling module xil_defaultlib.SeriesALU
+Compiling module xil_defaultlib.tb_SeriesALU
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_SeriesALU_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_SeriesALU_behav -key {Behavioral:sim_1:Functional:tb_SeriesALU} -tclbatch {tb_SeriesALU.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source tb_SeriesALU.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Test success...
+$finish called at time : 10 ns : File "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sim_1/new/tb_SeriesALU.v" Line 56
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_SeriesALU_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+set_property top tb_PipelineALU [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_PipelineALU' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_PipelineALU_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sources_1/new/PipelineALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PipelineALU
+INFO: [VRFC 10-2458] undeclared symbol out1, assumed default net type wire [D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sources_1/new/PipelineALU.v:46]
+INFO: [VRFC 10-2458] undeclared symbol out2, assumed default net type wire [D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sources_1/new/PipelineALU.v:47]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sources_1/new/SimpleALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SimpleALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sim_1/new/tb_PipelineALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_PipelineALU
+WARNING: [VRFC 10-986] literal value truncated to fit in 8 bits [D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sim_1/new/tb_PipelineALU.v:59]
+WARNING: [VRFC 10-986] literal value truncated to fit in 3 bits [D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sim_1/new/tb_PipelineALU.v:60]
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado2018/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 991de195ab4e43b2b50e4c777bf0086e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_PipelineALU_behav xil_defaultlib.tb_PipelineALU xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 8 for port 'Dout' [D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sources_1/new/PipelineALU.v:46]
+ERROR: [VRFC 10-3236] concurrent assignment to a non-net 'cout' is not permitted [D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sources_1/new/PipelineALU.v:46]
+ERROR: [VRFC 10-3236] concurrent assignment to a non-net 'cout' is not permitted [D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sources_1/new/PipelineALU.v:47]
+ERROR: [VRFC 10-3236] concurrent assignment to a non-net 'out' is not permitted [D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sources_1/new/PipelineALU.v:48]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 8 for port 'Dout' [D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sources_1/new/PipelineALU.v:47]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_PipelineALU' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_PipelineALU_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sources_1/new/PipelineALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PipelineALU
+INFO: [VRFC 10-2458] undeclared symbol out1, assumed default net type wire [D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sources_1/new/PipelineALU.v:46]
+INFO: [VRFC 10-2458] undeclared symbol out2, assumed default net type wire [D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sources_1/new/PipelineALU.v:47]
+ERROR: [VRFC 10-1280] procedural assignment to a non-register out is not permitted, left-hand side should be reg/integer/time/genvar [D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sources_1/new/PipelineALU.v:54]
+ERROR: [VRFC 10-1280] procedural assignment to a non-register cout is not permitted, left-hand side should be reg/integer/time/genvar [D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sources_1/new/PipelineALU.v:55]
+ERROR: [VRFC 10-1280] procedural assignment to a non-register out is not permitted, left-hand side should be reg/integer/time/genvar [D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sources_1/new/PipelineALU.v:69]
+ERROR: [VRFC 10-1280] procedural assignment to a non-register cout is not permitted, left-hand side should be reg/integer/time/genvar [D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sources_1/new/PipelineALU.v:70]
+ERROR: [VRFC 10-1280] procedural assignment to a non-register out is not permitted, left-hand side should be reg/integer/time/genvar [D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sources_1/new/PipelineALU.v:83]
+ERROR: [VRFC 10-1280] procedural assignment to a non-register cout is not permitted, left-hand side should be reg/integer/time/genvar [D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sources_1/new/PipelineALU.v:84]
+ERROR: [VRFC 10-1280] procedural assignment to a non-register out is not permitted, left-hand side should be reg/integer/time/genvar [D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sources_1/new/PipelineALU.v:96]
+ERROR: [VRFC 10-1280] procedural assignment to a non-register cout is not permitted, left-hand side should be reg/integer/time/genvar [D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sources_1/new/PipelineALU.v:97]
+ERROR: [VRFC 10-2865] module 'PipelineALU' ignored due to previous errors [D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sources_1/new/PipelineALU.v:23]
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_PipelineALU' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_PipelineALU_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sources_1/new/PipelineALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PipelineALU
+INFO: [VRFC 10-2458] undeclared symbol out1, assumed default net type wire [D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sources_1/new/PipelineALU.v:46]
+INFO: [VRFC 10-2458] undeclared symbol out2, assumed default net type wire [D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sources_1/new/PipelineALU.v:47]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sources_1/new/SimpleALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SimpleALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sim_1/new/tb_PipelineALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_PipelineALU
+WARNING: [VRFC 10-986] literal value truncated to fit in 8 bits [D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sim_1/new/tb_PipelineALU.v:59]
+WARNING: [VRFC 10-986] literal value truncated to fit in 3 bits [D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sim_1/new/tb_PipelineALU.v:60]
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado2018/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 991de195ab4e43b2b50e4c777bf0086e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_PipelineALU_behav xil_defaultlib.tb_PipelineALU xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 8 for port 'Dout' [D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sources_1/new/PipelineALU.v:46]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 8 for port 'Dout' [D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sources_1/new/PipelineALU.v:47]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.SimpleALU
+Compiling module xil_defaultlib.PipelineALU
+Compiling module xil_defaultlib.tb_PipelineALU
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_PipelineALU_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_PipelineALU_behav -key {Behavioral:sim_1:Functional:tb_PipelineALU} -tclbatch {tb_PipelineALU.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source tb_PipelineALU.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Error: Test failed for ADD. Expected b11110001, b100, got 00000000, 001
+Time: 50 ns  Iteration: 0  Process: /tb_PipelineALU/Initial49_8  File: D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sim_1/new/tb_PipelineALU.v
+$finish called at time : 50 ns : File "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sim_1/new/tb_PipelineALU.v" Line 68
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_PipelineALU_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+run 100 ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_PipelineALU' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_PipelineALU_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sources_1/new/PipelineALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PipelineALU
+INFO: [VRFC 10-2458] undeclared symbol out1, assumed default net type wire [D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sources_1/new/PipelineALU.v:46]
+INFO: [VRFC 10-2458] undeclared symbol out2, assumed default net type wire [D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sources_1/new/PipelineALU.v:47]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sources_1/new/SimpleALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SimpleALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sim_1/new/tb_PipelineALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_PipelineALU
+WARNING: [VRFC 10-986] literal value truncated to fit in 8 bits [D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sim_1/new/tb_PipelineALU.v:59]
+WARNING: [VRFC 10-986] literal value truncated to fit in 3 bits [D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sim_1/new/tb_PipelineALU.v:60]
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado2018/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 991de195ab4e43b2b50e4c777bf0086e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_PipelineALU_behav xil_defaultlib.tb_PipelineALU xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 8 for port 'Dout' [D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sources_1/new/PipelineALU.v:46]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 8 for port 'Dout' [D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sources_1/new/PipelineALU.v:47]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.SimpleALU
+Compiling module xil_defaultlib.PipelineALU
+Compiling module xil_defaultlib.tb_PipelineALU
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_PipelineALU_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_PipelineALU_behav -key {Behavioral:sim_1:Functional:tb_PipelineALU} -tclbatch {tb_PipelineALU.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source tb_PipelineALU.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Error: Test failed for ADD. Expected b11110001, b100, got 11100000, 001
+Time: 130 ns  Iteration: 0  Process: /tb_PipelineALU/Initial49_8  File: D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sim_1/new/tb_PipelineALU.v
+$finish called at time : 130 ns : File "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sim_1/new/tb_PipelineALU.v" Line 68
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_PipelineALU_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_PipelineALU' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_PipelineALU_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sources_1/new/PipelineALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PipelineALU
+INFO: [VRFC 10-2458] undeclared symbol out1, assumed default net type wire [D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sources_1/new/PipelineALU.v:46]
+INFO: [VRFC 10-2458] undeclared symbol out2, assumed default net type wire [D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sources_1/new/PipelineALU.v:47]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sources_1/new/SimpleALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SimpleALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sim_1/new/tb_PipelineALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_PipelineALU
+WARNING: [VRFC 10-986] literal value truncated to fit in 8 bits [D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sim_1/new/tb_PipelineALU.v:59]
+WARNING: [VRFC 10-986] literal value truncated to fit in 3 bits [D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sim_1/new/tb_PipelineALU.v:60]
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado2018/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 991de195ab4e43b2b50e4c777bf0086e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_PipelineALU_behav xil_defaultlib.tb_PipelineALU xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 8 for port 'Dout' [D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sources_1/new/PipelineALU.v:46]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 8 for port 'Dout' [D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sources_1/new/PipelineALU.v:47]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.SimpleALU
+Compiling module xil_defaultlib.PipelineALU
+Compiling module xil_defaultlib.tb_PipelineALU
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_PipelineALU_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_PipelineALU_behav -key {Behavioral:sim_1:Functional:tb_PipelineALU} -tclbatch {tb_PipelineALU.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source tb_PipelineALU.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Error: Test failed for ADD. Expected b01110000, b001, got 11100000, 001
+Time: 130 ns  Iteration: 0  Process: /tb_PipelineALU/Initial49_8  File: D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sim_1/new/tb_PipelineALU.v
+$finish called at time : 130 ns : File "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sim_1/new/tb_PipelineALU.v" Line 68
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_PipelineALU_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_PipelineALU' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_PipelineALU_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sources_1/new/PipelineALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PipelineALU
+INFO: [VRFC 10-2458] undeclared symbol out1, assumed default net type wire [D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sources_1/new/PipelineALU.v:46]
+INFO: [VRFC 10-2458] undeclared symbol out2, assumed default net type wire [D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sources_1/new/PipelineALU.v:47]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sources_1/new/SimpleALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SimpleALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sim_1/new/tb_PipelineALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_PipelineALU
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado2018/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 991de195ab4e43b2b50e4c777bf0086e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_PipelineALU_behav xil_defaultlib.tb_PipelineALU xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 8 for port 'Dout' [D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sources_1/new/PipelineALU.v:46]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 8 for port 'Dout' [D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sources_1/new/PipelineALU.v:47]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.SimpleALU
+Compiling module xil_defaultlib.PipelineALU
+Compiling module xil_defaultlib.tb_PipelineALU
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_PipelineALU_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_PipelineALU_behav -key {Behavioral:sim_1:Functional:tb_PipelineALU} -tclbatch {tb_PipelineALU.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source tb_PipelineALU.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Error: Test failed for ADD. Expected b01110000, b001, got 01100000, 001
+Time: 130 ns  Iteration: 0  Process: /tb_PipelineALU/Initial49_8  File: D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sim_1/new/tb_PipelineALU.v
+$finish called at time : 130 ns : File "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sim_1/new/tb_PipelineALU.v" Line 68
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_PipelineALU_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_PipelineALU' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_PipelineALU_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado2018/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 991de195ab4e43b2b50e4c777bf0086e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_PipelineALU_behav xil_defaultlib.tb_PipelineALU xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 8 for port 'Dout' [D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sources_1/new/PipelineALU.v:46]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 8 for port 'Dout' [D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sources_1/new/PipelineALU.v:47]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_PipelineALU_behav -key {Behavioral:sim_1:Functional:tb_PipelineALU} -tclbatch {tb_PipelineALU.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source tb_PipelineALU.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Error: Test failed for ADD. Expected b01110000, b001, got 01100000, 001
+Time: 130 ns  Iteration: 0  Process: /tb_PipelineALU/Initial49_8  File: D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sim_1/new/tb_PipelineALU.v
+$finish called at time : 130 ns : File "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sim_1/new/tb_PipelineALU.v" Line 68
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_PipelineALU_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_PipelineALU' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_PipelineALU_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sources_1/new/PipelineALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PipelineALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sources_1/new/SimpleALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SimpleALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sim_1/new/tb_PipelineALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_PipelineALU
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado2018/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 991de195ab4e43b2b50e4c777bf0086e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_PipelineALU_behav xil_defaultlib.tb_PipelineALU xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-3236] concurrent assignment to a non-net 'out1' is not permitted [D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sources_1/new/PipelineALU.v:48]
+ERROR: [VRFC 10-3236] concurrent assignment to a non-net 'out2' is not permitted [D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sources_1/new/PipelineALU.v:49]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_PipelineALU' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_PipelineALU_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sources_1/new/PipelineALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PipelineALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sources_1/new/SimpleALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SimpleALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sim_1/new/tb_PipelineALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_PipelineALU
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado2018/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 991de195ab4e43b2b50e4c777bf0086e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_PipelineALU_behav xil_defaultlib.tb_PipelineALU xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.SimpleALU
+Compiling module xil_defaultlib.PipelineALU
+Compiling module xil_defaultlib.tb_PipelineALU
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_PipelineALU_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_PipelineALU_behav -key {Behavioral:sim_1:Functional:tb_PipelineALU} -tclbatch {tb_PipelineALU.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source tb_PipelineALU.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Test success...
+$finish called at time : 130 ns : File "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sim_1/new/tb_PipelineALU.v" Line 68
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_PipelineALU_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_PipelineALU' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_PipelineALU_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sources_1/new/PipelineALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PipelineALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sources_1/new/SimpleALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SimpleALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sim_1/new/tb_PipelineALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_PipelineALU
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado2018/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 991de195ab4e43b2b50e4c777bf0086e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_PipelineALU_behav xil_defaultlib.tb_PipelineALU xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.SimpleALU
+Compiling module xil_defaultlib.PipelineALU
+Compiling module xil_defaultlib.tb_PipelineALU
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_PipelineALU_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_PipelineALU_behav -key {Behavioral:sim_1:Functional:tb_PipelineALU} -tclbatch {tb_PipelineALU.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source tb_PipelineALU.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Test success...
+$finish called at time : 130 ns : File "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sim_1/new/tb_PipelineALU.v" Line 68
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_PipelineALU_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_PipelineALU' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_PipelineALU_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado2018/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 991de195ab4e43b2b50e4c777bf0086e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_PipelineALU_behav xil_defaultlib.tb_PipelineALU xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_PipelineALU_behav -key {Behavioral:sim_1:Functional:tb_PipelineALU} -tclbatch {tb_PipelineALU.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source tb_PipelineALU.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Test success...
+$finish called at time : 130 ns : File "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sim_1/new/tb_PipelineALU.v" Line 68
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_PipelineALU_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+set_property top tb_SeriesALU [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+current_sim simulation_17
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_SeriesALU' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_SeriesALU_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sources_1/new/SeriesALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SeriesALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sources_1/new/SimpleALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SimpleALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sim_1/new/tb_SeriesALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_SeriesALU
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado2018/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 991de195ab4e43b2b50e4c777bf0086e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_SeriesALU_behav xil_defaultlib.tb_SeriesALU xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.SimpleALU
+Compiling module xil_defaultlib.SeriesALU
+Compiling module xil_defaultlib.tb_SeriesALU
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_SeriesALU_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_SeriesALU_behav -key {Behavioral:sim_1:Functional:tb_SeriesALU} -tclbatch {tb_SeriesALU.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source tb_SeriesALU.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Test success...
+$finish called at time : 10 ns : File "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sim_1/new/tb_SeriesALU.v" Line 56
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_SeriesALU_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a35tcpg236-1
+Top: SeriesALU
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 1028.680 ; gain = 80.020
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'SeriesALU' [D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sources_1/new/SeriesALU.v:23]
+INFO: [Synth 8-6157] synthesizing module 'SimpleALU' [D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sources_1/new/SimpleALU.v:23]
+INFO: [Synth 8-226] default block is never used [D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sources_1/new/SimpleALU.v:34]
+INFO: [Synth 8-6155] done synthesizing module 'SimpleALU' (1#1) [D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sources_1/new/SimpleALU.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'SeriesALU' (2#1) [D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sources_1/new/SeriesALU.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:03 . Memory (MB): peak = 1083.293 ; gain = 134.633
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:01 ; elapsed = 00:00:03 . Memory (MB): peak = 1083.293 ; gain = 134.633
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:01 ; elapsed = 00:00:03 . Memory (MB): peak = 1083.293 ; gain = 134.633
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1397.301 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1421.141 ; gain = 472.480
+9 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1421.168 ; gain = 472.508
+launch_runs synth_1 -jobs 4
+[Mon May 13 21:22:35 2024] Launched synth_1...
+Run output will be captured here: D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.runs/synth_1/runme.log
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_SeriesALU' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_SeriesALU_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sources_1/new/SeriesALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SeriesALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sources_1/new/SimpleALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SimpleALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sim_1/new/tb_SeriesALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_SeriesALU
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado2018/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 991de195ab4e43b2b50e4c777bf0086e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_SeriesALU_behav xil_defaultlib.tb_SeriesALU xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.SimpleALU
+Compiling module xil_defaultlib.SeriesALU
+Compiling module xil_defaultlib.tb_SeriesALU
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_SeriesALU_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_SeriesALU_behav -key {Behavioral:sim_1:Functional:tb_SeriesALU} -tclbatch {tb_SeriesALU.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source tb_SeriesALU.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Error: Test failed for ADD. Expected b01110010, b001, got xxxxxxxx, xxx
+Time: 10 ns  Iteration: 0  Process: /tb_SeriesALU/Initial41_4  File: D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sim_1/new/tb_SeriesALU.v
+$finish called at time : 10 ns : File "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sim_1/new/tb_SeriesALU.v" Line 56
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_SeriesALU_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_SeriesALU' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_SeriesALU_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sources_1/new/SeriesALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SeriesALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sources_1/new/SimpleALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SimpleALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sim_1/new/tb_SeriesALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_SeriesALU
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado2018/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 991de195ab4e43b2b50e4c777bf0086e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_SeriesALU_behav xil_defaultlib.tb_SeriesALU xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.SimpleALU
+Compiling module xil_defaultlib.SeriesALU
+Compiling module xil_defaultlib.tb_SeriesALU
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_SeriesALU_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_SeriesALU_behav -key {Behavioral:sim_1:Functional:tb_SeriesALU} -tclbatch {tb_SeriesALU.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source tb_SeriesALU.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Error: Test failed for ADD. Expected b01110010, b001, got 00000000, xxx
+Time: 40 ns  Iteration: 0  Process: /tb_SeriesALU/Initial48_5  File: D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sim_1/new/tb_SeriesALU.v
+$finish called at time : 40 ns : File "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sim_1/new/tb_SeriesALU.v" Line 63
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_SeriesALU_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_SeriesALU' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_SeriesALU_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sources_1/new/SeriesALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SeriesALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sources_1/new/SimpleALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SimpleALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sim_1/new/tb_SeriesALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_SeriesALU
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado2018/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 991de195ab4e43b2b50e4c777bf0086e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_SeriesALU_behav xil_defaultlib.tb_SeriesALU xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.SimpleALU
+Compiling module xil_defaultlib.SeriesALU
+Compiling module xil_defaultlib.tb_SeriesALU
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_SeriesALU_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_SeriesALU_behav -key {Behavioral:sim_1:Functional:tb_SeriesALU} -tclbatch {tb_SeriesALU.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source tb_SeriesALU.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Error: Test failed for ADD. Expected b01110010, b001, got 00000000, xxx
+Time: 40 ns  Iteration: 0  Process: /tb_SeriesALU/Initial48_5  File: D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sim_1/new/tb_SeriesALU.v
+$finish called at time : 40 ns : File "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sim_1/new/tb_SeriesALU.v" Line 64
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_SeriesALU_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_SeriesALU' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_SeriesALU_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sources_1/new/SeriesALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SeriesALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sources_1/new/SimpleALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SimpleALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sim_1/new/tb_SeriesALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_SeriesALU
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado2018/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 991de195ab4e43b2b50e4c777bf0086e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_SeriesALU_behav xil_defaultlib.tb_SeriesALU xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.SimpleALU
+Compiling module xil_defaultlib.SeriesALU
+Compiling module xil_defaultlib.tb_SeriesALU
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_SeriesALU_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_SeriesALU_behav -key {Behavioral:sim_1:Functional:tb_SeriesALU} -tclbatch {tb_SeriesALU.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source tb_SeriesALU.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Test success...
+$finish called at time : 40 ns : File "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sim_1/new/tb_SeriesALU.v" Line 66
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_SeriesALU_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1790.285 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'SeriesALU' [D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sources_1/new/SeriesALU.v:23]
+INFO: [Synth 8-6157] synthesizing module 'SimpleALU' [D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sources_1/new/SimpleALU.v:23]
+INFO: [Synth 8-226] default block is never used [D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sources_1/new/SimpleALU.v:34]
+INFO: [Synth 8-6155] done synthesizing module 'SimpleALU' (1#1) [D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sources_1/new/SimpleALU.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'SeriesALU' (2#1) [D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sources_1/new/SeriesALU.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1810.695 ; gain = 20.410
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1810.695 ; gain = 20.410
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1810.695 ; gain = 20.410
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1912.492 ; gain = 122.207
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.runs/synth_1
+
+launch_runs synth_1 -jobs 4
+[Mon May 13 21:52:05 2024] Launched synth_1...
+Run output will be captured here: D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Mon May 13 22:22:23 2024] Launched impl_1...
+Run output will be captured here: D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.runs/impl_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a35tcpg236-1
+INFO: [Netlist 29-17] Analyzing 45 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1965.352 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 45 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.101 . Memory (MB): peak = 2551.523 ; gain = 0.969
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.102 . Memory (MB): peak = 2551.523 ; gain = 0.969
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2551.523 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+current_design synth_1
+report_power -name {power_1}
+Command: report_power -name power_1
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+WARNING: [Power 33-232] No user defined clocks were found in the design!
+Resolution: Please specify clocks using create_clock/create_generated_clock for sequential elements. For pure combinatorial circuits, please specify a virtual clock, otherwise the vectorless estimation might be inaccurate
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+1 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+reset_run impl_1
+launch_runs impl_1 -jobs 4
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2941.152 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+[Mon May 13 22:32:06 2024] Launched impl_1...
+Run output will be captured here: D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.runs/impl_1/runme.log
+current_design impl_1
+refresh_design
+INFO: [Netlist 29-17] Analyzing 45 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.057 . Memory (MB): peak = 3017.324 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.057 . Memory (MB): peak = 3017.324 ; gain = 0.000
+refresh_design: Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 3826.348 ; gain = 809.023
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+report_utilization -name utilization_1
+file mkdir D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/constrs_1
+file mkdir D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/constrs_1/new
+close [ open D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/constrs_1/new/seriesALU_cons.xdc w ]
+add_files -fileset constrs_1 D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/constrs_1/new/seriesALU_cons.xdc
+set_property target_constrs_file D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/constrs_1/new/seriesALU_cons.xdc [current_fileset -constrset]
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3830.344 ; gain = 0.000
+ERROR: [Common 17-53] User Exception: A file was added to constraint set constrs_1 after the  implementation design was open. Doing "Save Constraints" will overwrite these files. Use "Save Constraints As" to avoid losing any data on disk.
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_2
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_2
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+set_property is_enabled false [get_files  D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sources_1/new/PipelineALU.v]
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_3
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+set_property is_enabled true [get_files  D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sources_1/new/PipelineALU.v]
+set_property is_enabled false [get_files  D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sources_1/new/SeriesALU.v]
+update_compile_order -fileset sources_1
+set_property top PipelineALU [current_fileset]
+update_compile_order -fileset sources_1
+set_property top tb_PipelineALU [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+current_sim simulation_25
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_PipelineALU' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_PipelineALU_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado2018/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 991de195ab4e43b2b50e4c777bf0086e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_PipelineALU_behav xil_defaultlib.tb_PipelineALU xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.SimpleALU
+Compiling module xil_defaultlib.PipelineALU
+Compiling module xil_defaultlib.tb_PipelineALU
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_PipelineALU_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_PipelineALU_behav -key {Behavioral:sim_1:Functional:tb_PipelineALU} -tclbatch {tb_PipelineALU.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source tb_PipelineALU.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Test success...
+$finish called at time : 130 ns : File "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sim_1/new/tb_PipelineALU.v" Line 68
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_PipelineALU_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 3830.344 ; gain = 0.000
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.runs/synth_1
+
+launch_runs synth_1 -jobs 4
+[Mon May 13 22:42:46 2024] Launched synth_1...
+Run output will be captured here: D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.runs/synth_1/runme.log
+current_design synth_1
+close_design
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a35tcpg236-1
+INFO: [Netlist 29-17] Analyzing 45 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/constrs_1/new/seriesALU_cons.xdc]
+Finished Parsing XDC File [D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/constrs_1/new/seriesALU_cons.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3830.344 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+report_power -name {power_1}
+Command: report_power -name power_1
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+1 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+launch_runs impl_1 -jobs 4
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3830.344 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3830.344 ; gain = 0.000
+[Mon May 13 22:45:29 2024] Launched impl_1...
+Run output will be captured here: D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.runs/impl_1/runme.log
+current_design impl_1
+refresh_design
+INFO: [Netlist 29-17] Analyzing 45 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.088 . Memory (MB): peak = 3830.344 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.088 . Memory (MB): peak = 3830.344 ; gain = 0.000
+refresh_design: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 3830.344 ; gain = 0.000
+CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
+close_design
+close_design
+close_design
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+current_sim simulation_30
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon May 13 23:01:30 2024...

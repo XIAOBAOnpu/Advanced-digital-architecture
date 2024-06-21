@@ -1,0 +1,5 @@
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+Error: Test failed for ADD. Expected b01110010, b001, got 00000000, 001
+Time: 130 ns  Iteration: 0  Process: /tb_PipelineALU/Initial50_791  File: D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/PipelineALU/pipelineALU.srcs/sim_1/new/tb_PipelineALU.v
+$finish called at time : 130 ns : File "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/PipelineALU/pipelineALU.srcs/sim_1/new/tb_PipelineALU.v" Line 69

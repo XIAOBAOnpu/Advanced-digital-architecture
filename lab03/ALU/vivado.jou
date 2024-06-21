@@ -1,0 +1,247 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Mon May 13 14:16:41 2024
+# Process ID: 22196
+# Current directory: D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent26612 D:\BRUFACE\MA2\S02\advancedDigitalArchi\Ex\lab03\ALU\ALU.xpr
+# Log file: D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/vivado.log
+# Journal file: D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source tb_simpleALU.tcl
+close [ open D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sources_1/new/SeriesALU.v w ]
+add_files D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sources_1/new/SeriesALU.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sim_1/new/tb_SeriesALU.v w ]
+add_files -fileset sim_1 D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sim_1/new/tb_SeriesALU.v
+update_compile_order -fileset sim_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top tb_SeriesALU [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+source tb_SeriesALU.tcl
+close_sim
+launch_simulation
+source tb_SeriesALU.tcl
+close_sim
+launch_simulation
+source tb_SeriesALU.tcl
+close_sim
+launch_simulation
+source tb_SeriesALU.tcl
+close_sim
+launch_simulation
+source tb_SeriesALU.tcl
+close [ open D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sources_1/new/PipelineALU.v w ]
+add_files D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sources_1/new/PipelineALU.v
+update_compile_order -fileset sources_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sim_1/new/tb_PipelineALU.v w ]
+add_files -fileset sim_1 D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sim_1/new/tb_PipelineALU.v
+update_compile_order -fileset sim_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top tb_PipelineALU [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+launch_simulation
+launch_simulation
+source tb_PipelineALU.tcl
+close_sim
+launch_simulation
+source tb_PipelineALU.tcl
+run 100 ns
+update_compile_order -fileset sim_1
+close_sim
+launch_simulation
+source tb_PipelineALU.tcl
+run 100 ns
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top tb_PipelineALU90 [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top tb_PipelineALU [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+close_sim
+launch_simulation
+source tb_PipelineALU.tcl
+run 100 ns
+close_sim
+launch_simulation
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top tb_SeriesALU [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+current_sim simulation_6
+close_sim
+launch_simulation
+source tb_SeriesALU.tcl
+close_sim
+launch_simulation
+source tb_SeriesALU.tcl
+close_sim
+launch_simulation
+source tb_SeriesALU.tcl
+close_sim
+launch_simulation
+launch_simulation
+source tb_SeriesALU.tcl
+close_sim
+launch_simulation
+source tb_SeriesALU.tcl
+close_sim
+launch_simulation
+source tb_SeriesALU.tcl
+close_sim
+launch_simulation
+source tb_SeriesALU.tcl
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top tb_PipelineALU [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+launch_simulation
+launch_simulation
+source tb_PipelineALU.tcl
+run 100 ns
+close_sim
+launch_simulation
+source tb_PipelineALU.tcl
+close_sim
+launch_simulation
+source tb_PipelineALU.tcl
+close_sim
+launch_simulation
+source tb_PipelineALU.tcl
+close_sim
+launch_simulation
+source tb_PipelineALU.tcl
+close_sim
+launch_simulation
+launch_simulation
+source tb_PipelineALU.tcl
+close_sim
+launch_simulation
+source tb_PipelineALU.tcl
+close_sim
+launch_simulation
+source tb_PipelineALU.tcl
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top tb_SeriesALU [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+current_sim simulation_17
+close_sim
+launch_simulation
+source tb_SeriesALU.tcl
+synth_design -rtl -name rtl_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+close_sim
+launch_simulation
+source tb_SeriesALU.tcl
+close_sim
+launch_simulation
+source tb_SeriesALU.tcl
+close_sim
+launch_simulation
+source tb_SeriesALU.tcl
+close_sim
+launch_simulation
+source tb_SeriesALU.tcl
+refresh_design
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+open_run synth_1 -name synth_1
+open_run impl_1
+current_design synth_1
+report_power -name {power_1}
+reset_run impl_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+current_design impl_1
+refresh_design
+report_utilization -name utilization_1
+file mkdir D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/constrs_1
+file mkdir D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/constrs_1/new
+close [ open D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/constrs_1/new/seriesALU_cons.xdc w ]
+add_files -fileset constrs_1 D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/constrs_1/new/seriesALU_cons.xdc
+set_property target_constrs_file D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/constrs_1/new/seriesALU_cons.xdc [current_fileset -constrset]
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_2
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_2
+set_property is_enabled false [get_files  D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sources_1/new/PipelineALU.v]
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_3
+set_property is_enabled true [get_files  D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sources_1/new/PipelineALU.v]
+set_property is_enabled false [get_files  D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sources_1/new/SeriesALU.v]
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top PipelineALU [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top tb_PipelineALU [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+current_sim simulation_25
+close_sim
+launch_simulation
+source tb_PipelineALU.tcl
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+current_design synth_1
+close_design
+open_run synth_1 -name synth_1
+report_power -name {power_1}
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+current_design impl_1
+refresh_design
+close_design
+close_design
+close_design
+close_sim
+current_sim simulation_30
+close_sim
+close_sim

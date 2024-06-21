@@ -1,0 +1,8 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/PipelineALU/pipelineALU.sim/sim_1/impl/timing/xsim/tb_PipelineALU_time_impl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PipelineALU
+INFO: [VRFC 10-311] analyzing module SimpleALU
+INFO: [VRFC 10-311] analyzing module SimpleALU_0
+INFO: [VRFC 10-311] analyzing module SimpleALU_1
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/PipelineALU/pipelineALU.srcs/sim_1/new/tb_PipelineALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_PipelineALU

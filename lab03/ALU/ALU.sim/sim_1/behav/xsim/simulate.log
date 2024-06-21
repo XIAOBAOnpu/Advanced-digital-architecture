@@ -1,0 +1,4 @@
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+All tests completed.
+$finish called at time : 165 ns : File "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/ALU/ALU.srcs/sim_1/new/tb_simpleALU.v" Line 89

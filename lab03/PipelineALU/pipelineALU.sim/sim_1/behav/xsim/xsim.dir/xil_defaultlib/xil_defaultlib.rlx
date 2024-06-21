@@ -1,0 +1,8 @@
+0.6
+2018.3
+Dec  7 2018
+00:33:28
+D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/PipelineALU/pipelineALU.sim/sim_1/behav/xsim/glbl.v,1544155481,verilog,,,,glbl,,,,,,,,
+D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/PipelineALU/pipelineALU.srcs/sim_1/new/tb_PipelineALU.v,1715634051,verilog,,,,tb_PipelineALU,,,,,,,,
+D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/PipelineALU/pipelineALU.srcs/sources_1/new/PipelineALU.v,1715710546,verilog,,D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/PipelineALU/pipelineALU.srcs/sources_1/new/SimpleALU.v,,PipelineALU,,,,,,,,
+D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/PipelineALU/pipelineALU.srcs/sources_1/new/SimpleALU.v,1715634006,verilog,,D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/PipelineALU/pipelineALU.srcs/sim_1/new/tb_PipelineALU.v,,SimpleALU,,,,,,,,

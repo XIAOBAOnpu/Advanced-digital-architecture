@@ -1,0 +1,4 @@
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+Test success...
+$finish called at time : 130 ns : File "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab03/PipelineALU/pipelineALU.srcs/sim_1/new/tb_PipelineALU.v" Line 69
