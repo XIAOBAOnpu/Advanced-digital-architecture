@@ -1,0 +1,1309 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Wed May 22 16:00:22 2024
+| Host         : HanBao running 64-bit major release  (build 9200)
+| Command      : report_timing_summary -max_paths 10 -file ca_1D_timing_summary_routed.rpt -pb ca_1D_timing_summary_routed.pb -rpx ca_1D_timing_summary_routed.rpx -warn_on_violation
+| Design       : ca_1D
+| Device       : 7a35t-cpg236
+| Speed File   : -1  PRODUCTION 1.23 2018-06-13
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Summary Report
+
+------------------------------------------------------------------------------------------------
+| Timer Settings
+| --------------
+------------------------------------------------------------------------------------------------
+
+  Enable Multi Corner Analysis               :  Yes
+  Enable Pessimism Removal                   :  Yes
+  Pessimism Removal Resolution               :  Nearest Common Node
+  Enable Input Delay Default Clock           :  No
+  Enable Preset / Clear Arcs                 :  No
+  Disable Flight Delays                      :  No
+  Ignore I/O Paths                           :  No
+  Timing Early Launch at Borrowing Latches   :  false
+
+  Corner  Analyze    Analyze    
+  Name    Max Paths  Min Paths  
+  ------  ---------  ---------  
+  Slow    Yes        Yes        
+  Fast    Yes        Yes        
+
+
+
+check_timing report
+
+Table of Contents
+-----------------
+1. checking no_clock
+2. checking constant_clock
+3. checking pulse_width_clock
+4. checking unconstrained_internal_endpoints
+5. checking no_input_delay
+6. checking no_output_delay
+7. checking multiple_clock
+8. checking generated_clocks
+9. checking loops
+10. checking partial_input_delay
+11. checking partial_output_delay
+12. checking latch_loops
+
+1. checking no_clock
+--------------------
+ There is 1 register/latch pin with no clock driven by root clock pin: initialState[0] (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: initialState[1] (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: initialState[2] (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: initialState[3] (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: initialState[4] (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: initialState[5] (HIGH)
+
+ There are 6 register/latch pins with no clock driven by root clock pin: rst (HIGH)
+
+
+2. checking constant_clock
+--------------------------
+ There are 0 register/latch pins with constant_clock.
+
+
+3. checking pulse_width_clock
+-----------------------------
+ There are 0 register/latch pins which need pulse_width check
+
+
+4. checking unconstrained_internal_endpoints
+--------------------------------------------
+ There are 6 pins that are not constrained for maximum delay. (HIGH)
+
+ There are 0 pins that are not constrained for maximum delay due to constant clock.
+
+
+5. checking no_input_delay
+--------------------------
+ There are 7 input ports with no input delay specified. (HIGH)
+
+ There are 0 input ports with no input delay but user has a false path constraint.
+
+
+6. checking no_output_delay
+---------------------------
+ There are 6 ports with no output delay specified. (HIGH)
+
+ There are 0 ports with no output delay but user has a false path constraint
+
+ There are 0 ports with no output delay but with a timing clock defined on it or propagating through it
+
+
+7. checking multiple_clock
+--------------------------
+ There are 0 register/latch pins with multiple clocks.
+
+
+8. checking generated_clocks
+----------------------------
+ There are 0 generated clocks that are not connected to a clock source.
+
+
+9. checking loops
+-----------------
+ There are 0 combinational loops in the design.
+
+
+10. checking partial_input_delay
+--------------------------------
+ There are 0 input ports with partial input delay specified.
+
+
+11. checking partial_output_delay
+---------------------------------
+ There are 0 ports with partial output delay specified.
+
+
+12. checking latch_loops
+------------------------
+ There are 0 combinational latch loops in the design through latch input
+
+
+
+------------------------------------------------------------------------------------------------
+| Design Timing Summary
+| ---------------------
+------------------------------------------------------------------------------------------------
+
+    WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+    -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+      1.415        0.000                      0                   12        0.324        0.000                      0                   12        1.500        0.000                       0                    13  
+
+
+All user specified timing constraints are met.
+
+
+------------------------------------------------------------------------------------------------
+| Clock Summary
+| -------------
+------------------------------------------------------------------------------------------------
+
+Clock  Waveform(ns)         Period(ns)      Frequency(MHz)
+-----  ------------         ----------      --------------
+clk    {0.000 2.000}        4.000           250.000         
+
+
+------------------------------------------------------------------------------------------------
+| Intra Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+Clock             WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+-----             -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+clk                 1.415        0.000                      0                   12        0.324        0.000                      0                   12        1.500        0.000                       0                    13  
+
+
+------------------------------------------------------------------------------------------------
+| Inter Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Other Path Groups Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    ----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Timing Details
+| --------------
+------------------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  clk
+  To Clock:  clk
+
+Setup :            0  Failing Endpoints,  Worst Slack        1.415ns,  Total Violation        0.000ns
+Hold  :            0  Failing Endpoints,  Worst Slack        0.324ns,  Total Violation        0.000ns
+PW    :            0  Failing Endpoints,  Worst Slack        1.500ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             1.415ns  (required time - arrival time)
+  Source:                 genCells[1].cellBetween/currentState_reg_P/C
+                            (rising edge-triggered cell FDPE clocked by clk  {rise@0.000ns fall@2.000ns period=4.000ns})
+  Destination:            cellFirst/currentState_reg_C/D
+                            (rising edge-triggered cell FDCE clocked by clk  {rise@0.000ns fall@2.000ns period=4.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            4.000ns  (clk rise@4.000ns - clk rise@0.000ns)
+  Data Path Delay:        2.458ns  (logic 0.704ns (28.643%)  route 1.754ns (71.357%))
+  Logic Levels:           2  (LUT3=1 LUT5=1)
+  Clock Path Skew:        -0.025ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.284ns = ( 8.284 - 4.000 ) 
+    Source Clock Delay      (SCD):    4.645ns
+    Clock Pessimism Removal (CPR):    0.336ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    M18                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    M18                  IBUF (Prop_ibuf_I_O)         0.938     0.938 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.972     2.910    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.006 r  clk_IBUF_BUFG_inst/O
+                         net (fo=12, routed)          1.639     4.645    genCells[1].cellBetween/clk_IBUF_BUFG
+    SLICE_X1Y1           FDPE                                         r  genCells[1].cellBetween/currentState_reg_P/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X1Y1           FDPE (Prop_fdpe_C_Q)         0.456     5.101 r  genCells[1].cellBetween/currentState_reg_P/Q
+                         net (fo=2, routed)           0.822     5.923    genCells[1].cellBetween/currentState_reg_P_0
+    SLICE_X1Y2           LUT3 (Prop_lut3_I0_O)        0.124     6.047 r  genCells[1].cellBetween/currentState_OBUF[1]_inst_i_1/O
+                         net (fo=3, routed)           0.587     6.634    cellFirst/currentState_OBUF[0]
+    SLICE_X1Y2           LUT5 (Prop_lut5_I4_O)        0.124     6.758 r  cellFirst/nextState/O
+                         net (fo=2, routed)           0.345     7.103    cellFirst/nextState__0
+    SLICE_X1Y0           FDCE                                         r  cellFirst/currentState_reg_C/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        4.000     4.000 r  
+    M18                                               0.000     4.000 r  clk (IN)
+                         net (fo=0)                   0.000     4.000    clk
+    M18                  IBUF (Prop_ibuf_I_O)         0.805     4.805 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.868     6.673    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091     6.764 r  clk_IBUF_BUFG_inst/O
+                         net (fo=12, routed)          1.520     8.284    cellFirst/clk_IBUF_BUFG
+    SLICE_X1Y0           FDCE                                         r  cellFirst/currentState_reg_C/C
+                         clock pessimism              0.336     8.620    
+                         clock uncertainty           -0.035     8.585    
+    SLICE_X1Y0           FDCE (Setup_fdce_C_D)       -0.067     8.518    cellFirst/currentState_reg_C
+  -------------------------------------------------------------------
+                         required time                          8.518    
+                         arrival time                          -7.103    
+  -------------------------------------------------------------------
+                         slack                                  1.415    
+
+Slack (MET) :             1.415ns  (required time - arrival time)
+  Source:                 genCells[1].cellBetween/currentState_reg_P/C
+                            (rising edge-triggered cell FDPE clocked by clk  {rise@0.000ns fall@2.000ns period=4.000ns})
+  Destination:            cellFirst/currentState_reg_P/D
+                            (rising edge-triggered cell FDPE clocked by clk  {rise@0.000ns fall@2.000ns period=4.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            4.000ns  (clk rise@4.000ns - clk rise@0.000ns)
+  Data Path Delay:        2.461ns  (logic 0.704ns (28.611%)  route 1.757ns (71.389%))
+  Logic Levels:           2  (LUT3=1 LUT5=1)
+  Clock Path Skew:        -0.022ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.284ns = ( 8.284 - 4.000 ) 
+    Source Clock Delay      (SCD):    4.645ns
+    Clock Pessimism Removal (CPR):    0.339ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    M18                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    M18                  IBUF (Prop_ibuf_I_O)         0.938     0.938 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.972     2.910    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.006 r  clk_IBUF_BUFG_inst/O
+                         net (fo=12, routed)          1.639     4.645    genCells[1].cellBetween/clk_IBUF_BUFG
+    SLICE_X1Y1           FDPE                                         r  genCells[1].cellBetween/currentState_reg_P/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X1Y1           FDPE (Prop_fdpe_C_Q)         0.456     5.101 r  genCells[1].cellBetween/currentState_reg_P/Q
+                         net (fo=2, routed)           0.822     5.923    genCells[1].cellBetween/currentState_reg_P_0
+    SLICE_X1Y2           LUT3 (Prop_lut3_I0_O)        0.124     6.047 r  genCells[1].cellBetween/currentState_OBUF[1]_inst_i_1/O
+                         net (fo=3, routed)           0.587     6.634    cellFirst/currentState_OBUF[0]
+    SLICE_X1Y2           LUT5 (Prop_lut5_I4_O)        0.124     6.758 r  cellFirst/nextState/O
+                         net (fo=2, routed)           0.347     7.105    cellFirst/nextState__0
+    SLICE_X0Y1           FDPE                                         r  cellFirst/currentState_reg_P/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        4.000     4.000 r  
+    M18                                               0.000     4.000 r  clk (IN)
+                         net (fo=0)                   0.000     4.000    clk
+    M18                  IBUF (Prop_ibuf_I_O)         0.805     4.805 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.868     6.673    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091     6.764 r  clk_IBUF_BUFG_inst/O
+                         net (fo=12, routed)          1.520     8.284    cellFirst/clk_IBUF_BUFG
+    SLICE_X0Y1           FDPE                                         r  cellFirst/currentState_reg_P/C
+                         clock pessimism              0.339     8.623    
+                         clock uncertainty           -0.035     8.588    
+    SLICE_X0Y1           FDPE (Setup_fdpe_C_D)       -0.067     8.521    cellFirst/currentState_reg_P
+  -------------------------------------------------------------------
+                         required time                          8.521    
+                         arrival time                          -7.105    
+  -------------------------------------------------------------------
+                         slack                                  1.415    
+
+Slack (MET) :             1.446ns  (required time - arrival time)
+  Source:                 genCells[1].cellBetween/currentState_reg_P/C
+                            (rising edge-triggered cell FDPE clocked by clk  {rise@0.000ns fall@2.000ns period=4.000ns})
+  Destination:            genCells[1].cellBetween/currentState_reg_C/D
+                            (rising edge-triggered cell FDCE clocked by clk  {rise@0.000ns fall@2.000ns period=4.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            4.000ns  (clk rise@4.000ns - clk rise@0.000ns)
+  Data Path Delay:        2.463ns  (logic 0.704ns (28.582%)  route 1.759ns (71.418%))
+  Logic Levels:           2  (LUT3=1 LUT5=1)
+  Clock Path Skew:        -0.025ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.284ns = ( 8.284 - 4.000 ) 
+    Source Clock Delay      (SCD):    4.645ns
+    Clock Pessimism Removal (CPR):    0.336ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    M18                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    M18                  IBUF (Prop_ibuf_I_O)         0.938     0.938 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.972     2.910    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.006 r  clk_IBUF_BUFG_inst/O
+                         net (fo=12, routed)          1.639     4.645    genCells[1].cellBetween/clk_IBUF_BUFG
+    SLICE_X1Y1           FDPE                                         r  genCells[1].cellBetween/currentState_reg_P/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X1Y1           FDPE (Prop_fdpe_C_Q)         0.456     5.101 r  genCells[1].cellBetween/currentState_reg_P/Q
+                         net (fo=2, routed)           0.822     5.923    genCells[1].cellBetween/currentState_reg_P_0
+    SLICE_X1Y2           LUT3 (Prop_lut3_I0_O)        0.124     6.047 r  genCells[1].cellBetween/currentState_OBUF[1]_inst_i_1/O
+                         net (fo=3, routed)           0.439     6.486    genCells[1].cellBetween/currentState_OBUF[0]
+    SLICE_X0Y1           LUT5 (Prop_lut5_I3_O)        0.124     6.610 r  genCells[1].cellBetween/nextState/O
+                         net (fo=2, routed)           0.498     7.108    genCells[1].cellBetween/nextState__0
+    SLICE_X2Y1           FDCE                                         r  genCells[1].cellBetween/currentState_reg_C/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        4.000     4.000 r  
+    M18                                               0.000     4.000 r  clk (IN)
+                         net (fo=0)                   0.000     4.000    clk
+    M18                  IBUF (Prop_ibuf_I_O)         0.805     4.805 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.868     6.673    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091     6.764 r  clk_IBUF_BUFG_inst/O
+                         net (fo=12, routed)          1.520     8.284    genCells[1].cellBetween/clk_IBUF_BUFG
+    SLICE_X2Y1           FDCE                                         r  genCells[1].cellBetween/currentState_reg_C/C
+                         clock pessimism              0.336     8.620    
+                         clock uncertainty           -0.035     8.585    
+    SLICE_X2Y1           FDCE (Setup_fdce_C_D)       -0.031     8.554    genCells[1].cellBetween/currentState_reg_C
+  -------------------------------------------------------------------
+                         required time                          8.554    
+                         arrival time                          -7.108    
+  -------------------------------------------------------------------
+                         slack                                  1.446    
+
+Slack (MET) :             1.475ns  (required time - arrival time)
+  Source:                 cellFirst/currentState_reg_C/C
+                            (rising edge-triggered cell FDCE clocked by clk  {rise@0.000ns fall@2.000ns period=4.000ns})
+  Destination:            cellEnd/currentState_reg_C/D
+                            (rising edge-triggered cell FDCE clocked by clk  {rise@0.000ns fall@2.000ns period=4.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            4.000ns  (clk rise@4.000ns - clk rise@0.000ns)
+  Data Path Delay:        2.397ns  (logic 0.704ns (29.364%)  route 1.693ns (70.636%))
+  Logic Levels:           2  (LUT3=1 LUT5=1)
+  Clock Path Skew:        -0.025ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.284ns = ( 8.284 - 4.000 ) 
+    Source Clock Delay      (SCD):    4.645ns
+    Clock Pessimism Removal (CPR):    0.336ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    M18                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    M18                  IBUF (Prop_ibuf_I_O)         0.938     0.938 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.972     2.910    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.006 r  clk_IBUF_BUFG_inst/O
+                         net (fo=12, routed)          1.639     4.645    cellFirst/clk_IBUF_BUFG
+    SLICE_X1Y0           FDCE                                         r  cellFirst/currentState_reg_C/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X1Y0           FDCE (Prop_fdce_C_Q)         0.456     5.101 r  cellFirst/currentState_reg_C/Q
+                         net (fo=2, routed)           0.647     5.748    cellFirst/currentState_reg_C_0
+    SLICE_X1Y1           LUT3 (Prop_lut3_I2_O)        0.124     5.872 r  cellFirst/currentState_OBUF[0]_inst_i_1/O
+                         net (fo=3, routed)           0.698     6.570    cellEnd/currentState_reg_P_4[0]
+    SLICE_X1Y4           LUT5 (Prop_lut5_I4_O)        0.124     6.694 r  cellEnd/nextState/O
+                         net (fo=2, routed)           0.348     7.042    cellEnd/nextState__0
+    SLICE_X0Y2           FDCE                                         r  cellEnd/currentState_reg_C/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        4.000     4.000 r  
+    M18                                               0.000     4.000 r  clk (IN)
+                         net (fo=0)                   0.000     4.000    clk
+    M18                  IBUF (Prop_ibuf_I_O)         0.805     4.805 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.868     6.673    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091     6.764 r  clk_IBUF_BUFG_inst/O
+                         net (fo=12, routed)          1.520     8.284    cellEnd/clk_IBUF_BUFG
+    SLICE_X0Y2           FDCE                                         r  cellEnd/currentState_reg_C/C
+                         clock pessimism              0.336     8.620    
+                         clock uncertainty           -0.035     8.585    
+    SLICE_X0Y2           FDCE (Setup_fdce_C_D)       -0.067     8.518    cellEnd/currentState_reg_C
+  -------------------------------------------------------------------
+                         required time                          8.518    
+                         arrival time                          -7.042    
+  -------------------------------------------------------------------
+                         slack                                  1.475    
+
+Slack (MET) :             1.481ns  (required time - arrival time)
+  Source:                 cellFirst/currentState_reg_C/C
+                            (rising edge-triggered cell FDCE clocked by clk  {rise@0.000ns fall@2.000ns period=4.000ns})
+  Destination:            cellEnd/currentState_reg_P/D
+                            (rising edge-triggered cell FDPE clocked by clk  {rise@0.000ns fall@2.000ns period=4.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            4.000ns  (clk rise@4.000ns - clk rise@0.000ns)
+  Data Path Delay:        2.392ns  (logic 0.704ns (29.436%)  route 1.688ns (70.564%))
+  Logic Levels:           2  (LUT3=1 LUT5=1)
+  Clock Path Skew:        -0.025ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.284ns = ( 8.284 - 4.000 ) 
+    Source Clock Delay      (SCD):    4.645ns
+    Clock Pessimism Removal (CPR):    0.336ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    M18                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    M18                  IBUF (Prop_ibuf_I_O)         0.938     0.938 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.972     2.910    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.006 r  clk_IBUF_BUFG_inst/O
+                         net (fo=12, routed)          1.639     4.645    cellFirst/clk_IBUF_BUFG
+    SLICE_X1Y0           FDCE                                         r  cellFirst/currentState_reg_C/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X1Y0           FDCE (Prop_fdce_C_Q)         0.456     5.101 r  cellFirst/currentState_reg_C/Q
+                         net (fo=2, routed)           0.647     5.748    cellFirst/currentState_reg_C_0
+    SLICE_X1Y1           LUT3 (Prop_lut3_I2_O)        0.124     5.872 r  cellFirst/currentState_OBUF[0]_inst_i_1/O
+                         net (fo=3, routed)           0.698     6.570    cellEnd/currentState_reg_P_4[0]
+    SLICE_X1Y4           LUT5 (Prop_lut5_I4_O)        0.124     6.694 r  cellEnd/nextState/O
+                         net (fo=2, routed)           0.342     7.037    cellEnd/nextState__0
+    SLICE_X1Y2           FDPE                                         r  cellEnd/currentState_reg_P/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        4.000     4.000 r  
+    M18                                               0.000     4.000 r  clk (IN)
+                         net (fo=0)                   0.000     4.000    clk
+    M18                  IBUF (Prop_ibuf_I_O)         0.805     4.805 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.868     6.673    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091     6.764 r  clk_IBUF_BUFG_inst/O
+                         net (fo=12, routed)          1.520     8.284    cellEnd/clk_IBUF_BUFG
+    SLICE_X1Y2           FDPE                                         r  cellEnd/currentState_reg_P/C
+                         clock pessimism              0.336     8.620    
+                         clock uncertainty           -0.035     8.585    
+    SLICE_X1Y2           FDPE (Setup_fdpe_C_D)       -0.067     8.518    cellEnd/currentState_reg_P
+  -------------------------------------------------------------------
+                         required time                          8.518    
+                         arrival time                          -7.037    
+  -------------------------------------------------------------------
+                         slack                                  1.481    
+
+Slack (MET) :             1.542ns  (required time - arrival time)
+  Source:                 genCells[2].cellBetween/currentState_reg_P/C
+                            (rising edge-triggered cell FDPE clocked by clk  {rise@0.000ns fall@2.000ns period=4.000ns})
+  Destination:            genCells[2].cellBetween/currentState_reg_C/D
+                            (rising edge-triggered cell FDCE clocked by clk  {rise@0.000ns fall@2.000ns period=4.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            4.000ns  (clk rise@4.000ns - clk rise@0.000ns)
+  Data Path Delay:        2.334ns  (logic 0.704ns (30.162%)  route 1.630ns (69.838%))
+  Logic Levels:           2  (LUT3=1 LUT5=1)
+  Clock Path Skew:        -0.022ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.283ns = ( 8.283 - 4.000 ) 
+    Source Clock Delay      (SCD):    4.644ns
+    Clock Pessimism Removal (CPR):    0.339ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    M18                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    M18                  IBUF (Prop_ibuf_I_O)         0.938     0.938 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.972     2.910    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.006 r  clk_IBUF_BUFG_inst/O
+                         net (fo=12, routed)          1.638     4.644    genCells[2].cellBetween/clk_IBUF_BUFG
+    SLICE_X1Y3           FDPE                                         r  genCells[2].cellBetween/currentState_reg_P/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X1Y3           FDPE (Prop_fdpe_C_Q)         0.456     5.100 r  genCells[2].cellBetween/currentState_reg_P/Q
+                         net (fo=2, routed)           0.509     5.609    genCells[2].cellBetween/currentState_reg_P_0
+    SLICE_X1Y3           LUT3 (Prop_lut3_I0_O)        0.124     5.733 r  genCells[2].cellBetween/currentState_OBUF[2]_inst_i_1/O
+                         net (fo=3, routed)           0.596     6.329    genCells[2].cellBetween/currentState_reg_P_1[0]
+    SLICE_X1Y2           LUT5 (Prop_lut5_I3_O)        0.124     6.453 r  genCells[2].cellBetween/nextState/O
+                         net (fo=2, routed)           0.525     6.978    genCells[2].cellBetween/nextState__0
+    SLICE_X0Y3           FDCE                                         r  genCells[2].cellBetween/currentState_reg_C/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        4.000     4.000 r  
+    M18                                               0.000     4.000 r  clk (IN)
+                         net (fo=0)                   0.000     4.000    clk
+    M18                  IBUF (Prop_ibuf_I_O)         0.805     4.805 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.868     6.673    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091     6.764 r  clk_IBUF_BUFG_inst/O
+                         net (fo=12, routed)          1.519     8.283    genCells[2].cellBetween/clk_IBUF_BUFG
+    SLICE_X0Y3           FDCE                                         r  genCells[2].cellBetween/currentState_reg_C/C
+                         clock pessimism              0.339     8.622    
+                         clock uncertainty           -0.035     8.587    
+    SLICE_X0Y3           FDCE (Setup_fdce_C_D)       -0.067     8.520    genCells[2].cellBetween/currentState_reg_C
+  -------------------------------------------------------------------
+                         required time                          8.520    
+                         arrival time                          -6.978    
+  -------------------------------------------------------------------
+                         slack                                  1.542    
+
+Slack (MET) :             1.552ns  (required time - arrival time)
+  Source:                 genCells[3].cellBetween/currentState_reg_P/C
+                            (rising edge-triggered cell FDPE clocked by clk  {rise@0.000ns fall@2.000ns period=4.000ns})
+  Destination:            genCells[4].cellBetween/currentState_reg_P/D
+                            (rising edge-triggered cell FDPE clocked by clk  {rise@0.000ns fall@2.000ns period=4.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            4.000ns  (clk rise@4.000ns - clk rise@0.000ns)
+  Data Path Delay:        2.323ns  (logic 0.580ns (24.963%)  route 1.743ns (75.037%))
+  Logic Levels:           1  (LUT5=1)
+  Clock Path Skew:        -0.022ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.283ns = ( 8.283 - 4.000 ) 
+    Source Clock Delay      (SCD):    4.644ns
+    Clock Pessimism Removal (CPR):    0.339ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    M18                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    M18                  IBUF (Prop_ibuf_I_O)         0.938     0.938 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.972     2.910    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.006 r  clk_IBUF_BUFG_inst/O
+                         net (fo=12, routed)          1.638     4.644    genCells[3].cellBetween/clk_IBUF_BUFG
+    SLICE_X0Y4           FDPE                                         r  genCells[3].cellBetween/currentState_reg_P/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X0Y4           FDPE (Prop_fdpe_C_Q)         0.456     5.100 f  genCells[3].cellBetween/currentState_reg_P/Q
+                         net (fo=2, routed)           1.136     6.236    genCells[4].cellBetween/currentState_reg_P_2
+    SLICE_X0Y4           LUT5 (Prop_lut5_I0_O)        0.124     6.360 r  genCells[4].cellBetween/nextState/O
+                         net (fo=2, routed)           0.607     6.967    genCells[4].cellBetween/nextState__0
+    SLICE_X1Y4           FDPE                                         r  genCells[4].cellBetween/currentState_reg_P/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        4.000     4.000 r  
+    M18                                               0.000     4.000 r  clk (IN)
+                         net (fo=0)                   0.000     4.000    clk
+    M18                  IBUF (Prop_ibuf_I_O)         0.805     4.805 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.868     6.673    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091     6.764 r  clk_IBUF_BUFG_inst/O
+                         net (fo=12, routed)          1.519     8.283    genCells[4].cellBetween/clk_IBUF_BUFG
+    SLICE_X1Y4           FDPE                                         r  genCells[4].cellBetween/currentState_reg_P/C
+                         clock pessimism              0.339     8.622    
+                         clock uncertainty           -0.035     8.587    
+    SLICE_X1Y4           FDPE (Setup_fdpe_C_D)       -0.067     8.520    genCells[4].cellBetween/currentState_reg_P
+  -------------------------------------------------------------------
+                         required time                          8.520    
+                         arrival time                          -6.967    
+  -------------------------------------------------------------------
+                         slack                                  1.552    
+
+Slack (MET) :             1.571ns  (required time - arrival time)
+  Source:                 genCells[3].cellBetween/currentState_reg_P/C
+                            (rising edge-triggered cell FDPE clocked by clk  {rise@0.000ns fall@2.000ns period=4.000ns})
+  Destination:            genCells[3].cellBetween/currentState_reg_C/D
+                            (rising edge-triggered cell FDCE clocked by clk  {rise@0.000ns fall@2.000ns period=4.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            4.000ns  (clk rise@4.000ns - clk rise@0.000ns)
+  Data Path Delay:        2.301ns  (logic 0.704ns (30.590%)  route 1.597ns (69.410%))
+  Logic Levels:           2  (LUT3=1 LUT5=1)
+  Clock Path Skew:        -0.025ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.283ns = ( 8.283 - 4.000 ) 
+    Source Clock Delay      (SCD):    4.644ns
+    Clock Pessimism Removal (CPR):    0.336ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    M18                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    M18                  IBUF (Prop_ibuf_I_O)         0.938     0.938 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.972     2.910    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.006 r  clk_IBUF_BUFG_inst/O
+                         net (fo=12, routed)          1.638     4.644    genCells[3].cellBetween/clk_IBUF_BUFG
+    SLICE_X0Y4           FDPE                                         r  genCells[3].cellBetween/currentState_reg_P/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X0Y4           FDPE (Prop_fdpe_C_Q)         0.456     5.100 r  genCells[3].cellBetween/currentState_reg_P/Q
+                         net (fo=2, routed)           0.514     5.614    genCells[3].cellBetween/currentState_reg_P_0
+    SLICE_X0Y4           LUT3 (Prop_lut3_I0_O)        0.124     5.738 r  genCells[3].cellBetween/currentState_OBUF[3]_inst_i_1/O
+                         net (fo=3, routed)           0.596     6.334    genCells[3].cellBetween/currentState_OBUF[0]
+    SLICE_X1Y3           LUT5 (Prop_lut5_I3_O)        0.124     6.458 r  genCells[3].cellBetween/nextState/O
+                         net (fo=2, routed)           0.488     6.945    genCells[3].cellBetween/nextState__0
+    SLICE_X0Y5           FDCE                                         r  genCells[3].cellBetween/currentState_reg_C/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        4.000     4.000 r  
+    M18                                               0.000     4.000 r  clk (IN)
+                         net (fo=0)                   0.000     4.000    clk
+    M18                  IBUF (Prop_ibuf_I_O)         0.805     4.805 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.868     6.673    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091     6.764 r  clk_IBUF_BUFG_inst/O
+                         net (fo=12, routed)          1.519     8.283    genCells[3].cellBetween/clk_IBUF_BUFG
+    SLICE_X0Y5           FDCE                                         r  genCells[3].cellBetween/currentState_reg_C/C
+                         clock pessimism              0.336     8.619    
+                         clock uncertainty           -0.035     8.584    
+    SLICE_X0Y5           FDCE (Setup_fdce_C_D)       -0.067     8.517    genCells[3].cellBetween/currentState_reg_C
+  -------------------------------------------------------------------
+                         required time                          8.517    
+                         arrival time                          -6.945    
+  -------------------------------------------------------------------
+                         slack                                  1.571    
+
+Slack (MET) :             1.642ns  (required time - arrival time)
+  Source:                 genCells[3].cellBetween/currentState_reg_P/C
+                            (rising edge-triggered cell FDPE clocked by clk  {rise@0.000ns fall@2.000ns period=4.000ns})
+  Destination:            genCells[4].cellBetween/currentState_reg_C/D
+                            (rising edge-triggered cell FDCE clocked by clk  {rise@0.000ns fall@2.000ns period=4.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            4.000ns  (clk rise@4.000ns - clk rise@0.000ns)
+  Data Path Delay:        2.267ns  (logic 0.580ns (25.584%)  route 1.687ns (74.416%))
+  Logic Levels:           1  (LUT5=1)
+  Clock Path Skew:        -0.025ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.283ns = ( 8.283 - 4.000 ) 
+    Source Clock Delay      (SCD):    4.644ns
+    Clock Pessimism Removal (CPR):    0.336ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    M18                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    M18                  IBUF (Prop_ibuf_I_O)         0.938     0.938 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.972     2.910    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.006 r  clk_IBUF_BUFG_inst/O
+                         net (fo=12, routed)          1.638     4.644    genCells[3].cellBetween/clk_IBUF_BUFG
+    SLICE_X0Y4           FDPE                                         r  genCells[3].cellBetween/currentState_reg_P/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X0Y4           FDPE (Prop_fdpe_C_Q)         0.456     5.100 f  genCells[3].cellBetween/currentState_reg_P/Q
+                         net (fo=2, routed)           1.136     6.236    genCells[4].cellBetween/currentState_reg_P_2
+    SLICE_X0Y4           LUT5 (Prop_lut5_I0_O)        0.124     6.360 r  genCells[4].cellBetween/nextState/O
+                         net (fo=2, routed)           0.551     6.911    genCells[4].cellBetween/nextState__0
+    SLICE_X2Y4           FDCE                                         r  genCells[4].cellBetween/currentState_reg_C/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        4.000     4.000 r  
+    M18                                               0.000     4.000 r  clk (IN)
+                         net (fo=0)                   0.000     4.000    clk
+    M18                  IBUF (Prop_ibuf_I_O)         0.805     4.805 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.868     6.673    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091     6.764 r  clk_IBUF_BUFG_inst/O
+                         net (fo=12, routed)          1.519     8.283    genCells[4].cellBetween/clk_IBUF_BUFG
+    SLICE_X2Y4           FDCE                                         r  genCells[4].cellBetween/currentState_reg_C/C
+                         clock pessimism              0.336     8.619    
+                         clock uncertainty           -0.035     8.584    
+    SLICE_X2Y4           FDCE (Setup_fdce_C_D)       -0.031     8.553    genCells[4].cellBetween/currentState_reg_C
+  -------------------------------------------------------------------
+                         required time                          8.553    
+                         arrival time                          -6.911    
+  -------------------------------------------------------------------
+                         slack                                  1.642    
+
+Slack (MET) :             1.732ns  (required time - arrival time)
+  Source:                 genCells[1].cellBetween/currentState_reg_P/C
+                            (rising edge-triggered cell FDPE clocked by clk  {rise@0.000ns fall@2.000ns period=4.000ns})
+  Destination:            genCells[1].cellBetween/currentState_reg_P/D
+                            (rising edge-triggered cell FDPE clocked by clk  {rise@0.000ns fall@2.000ns period=4.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            4.000ns  (clk rise@4.000ns - clk rise@0.000ns)
+  Data Path Delay:        2.166ns  (logic 0.704ns (32.506%)  route 1.462ns (67.494%))
+  Logic Levels:           2  (LUT3=1 LUT5=1)
+  Clock Path Skew:        0.000ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.284ns = ( 8.284 - 4.000 ) 
+    Source Clock Delay      (SCD):    4.645ns
+    Clock Pessimism Removal (CPR):    0.361ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    M18                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    M18                  IBUF (Prop_ibuf_I_O)         0.938     0.938 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.972     2.910    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.006 r  clk_IBUF_BUFG_inst/O
+                         net (fo=12, routed)          1.639     4.645    genCells[1].cellBetween/clk_IBUF_BUFG
+    SLICE_X1Y1           FDPE                                         r  genCells[1].cellBetween/currentState_reg_P/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X1Y1           FDPE (Prop_fdpe_C_Q)         0.456     5.101 r  genCells[1].cellBetween/currentState_reg_P/Q
+                         net (fo=2, routed)           0.822     5.923    genCells[1].cellBetween/currentState_reg_P_0
+    SLICE_X1Y2           LUT3 (Prop_lut3_I0_O)        0.124     6.047 r  genCells[1].cellBetween/currentState_OBUF[1]_inst_i_1/O
+                         net (fo=3, routed)           0.439     6.486    genCells[1].cellBetween/currentState_OBUF[0]
+    SLICE_X0Y1           LUT5 (Prop_lut5_I3_O)        0.124     6.610 r  genCells[1].cellBetween/nextState/O
+                         net (fo=2, routed)           0.200     6.811    genCells[1].cellBetween/nextState__0
+    SLICE_X1Y1           FDPE                                         r  genCells[1].cellBetween/currentState_reg_P/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        4.000     4.000 r  
+    M18                                               0.000     4.000 r  clk (IN)
+                         net (fo=0)                   0.000     4.000    clk
+    M18                  IBUF (Prop_ibuf_I_O)         0.805     4.805 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.868     6.673    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091     6.764 r  clk_IBUF_BUFG_inst/O
+                         net (fo=12, routed)          1.520     8.284    genCells[1].cellBetween/clk_IBUF_BUFG
+    SLICE_X1Y1           FDPE                                         r  genCells[1].cellBetween/currentState_reg_P/C
+                         clock pessimism              0.361     8.645    
+                         clock uncertainty           -0.035     8.610    
+    SLICE_X1Y1           FDPE (Setup_fdpe_C_D)       -0.067     8.543    genCells[1].cellBetween/currentState_reg_P
+  -------------------------------------------------------------------
+                         required time                          8.543    
+                         arrival time                          -6.811    
+  -------------------------------------------------------------------
+                         slack                                  1.732    
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             0.324ns  (arrival time - required time)
+  Source:                 genCells[2].cellBetween/currentState_reg_C/C
+                            (rising edge-triggered cell FDCE clocked by clk  {rise@0.000ns fall@2.000ns period=4.000ns})
+  Destination:            genCells[3].cellBetween/currentState_reg_P/D
+                            (rising edge-triggered cell FDPE clocked by clk  {rise@0.000ns fall@2.000ns period=4.000ns})
+  Path Group:             clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk rise@0.000ns - clk rise@0.000ns)
+  Data Path Delay:        0.410ns  (logic 0.186ns (45.404%)  route 0.224ns (54.596%))
+  Logic Levels:           1  (LUT5=1)
+  Clock Path Skew:        0.016ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.939ns
+    Source Clock Delay      (SCD):    1.422ns
+    Clock Pessimism Removal (CPR):    0.501ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    M18                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    M18                  IBUF (Prop_ibuf_I_O)         0.167     0.167 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.634     0.801    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.827 r  clk_IBUF_BUFG_inst/O
+                         net (fo=12, routed)          0.595     1.422    genCells[2].cellBetween/clk_IBUF_BUFG
+    SLICE_X0Y3           FDCE                                         r  genCells[2].cellBetween/currentState_reg_C/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X0Y3           FDCE (Prop_fdce_C_Q)         0.141     1.563 f  genCells[2].cellBetween/currentState_reg_C/Q
+                         net (fo=2, routed)           0.097     1.660    genCells[3].cellBetween/currentState_reg_P_3
+    SLICE_X1Y3           LUT5 (Prop_lut5_I2_O)        0.045     1.705 r  genCells[3].cellBetween/nextState/O
+                         net (fo=2, routed)           0.127     1.831    genCells[3].cellBetween/nextState__0
+    SLICE_X0Y4           FDPE                                         r  genCells[3].cellBetween/currentState_reg_P/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        0.000     0.000 r  
+    M18                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    M18                  IBUF (Prop_ibuf_I_O)         0.356     0.356 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.689     1.044    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.073 r  clk_IBUF_BUFG_inst/O
+                         net (fo=12, routed)          0.866     1.939    genCells[3].cellBetween/clk_IBUF_BUFG
+    SLICE_X0Y4           FDPE                                         r  genCells[3].cellBetween/currentState_reg_P/C
+                         clock pessimism             -0.501     1.438    
+    SLICE_X0Y4           FDPE (Hold_fdpe_C_D)         0.070     1.508    genCells[3].cellBetween/currentState_reg_P
+  -------------------------------------------------------------------
+                         required time                         -1.508    
+                         arrival time                           1.831    
+  -------------------------------------------------------------------
+                         slack                                  0.324    
+
+Slack (MET) :             0.341ns  (arrival time - required time)
+  Source:                 cellEnd/currentState_reg_P/C
+                            (rising edge-triggered cell FDPE clocked by clk  {rise@0.000ns fall@2.000ns period=4.000ns})
+  Destination:            cellFirst/currentState_reg_P/D
+                            (rising edge-triggered cell FDPE clocked by clk  {rise@0.000ns fall@2.000ns period=4.000ns})
+  Path Group:             clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk rise@0.000ns - clk rise@0.000ns)
+  Data Path Delay:        0.427ns  (logic 0.186ns (43.607%)  route 0.241ns (56.393%))
+  Logic Levels:           1  (LUT5=1)
+  Clock Path Skew:        0.016ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.940ns
+    Source Clock Delay      (SCD):    1.423ns
+    Clock Pessimism Removal (CPR):    0.501ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    M18                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    M18                  IBUF (Prop_ibuf_I_O)         0.167     0.167 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.634     0.801    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.827 r  clk_IBUF_BUFG_inst/O
+                         net (fo=12, routed)          0.596     1.423    cellEnd/clk_IBUF_BUFG
+    SLICE_X1Y2           FDPE                                         r  cellEnd/currentState_reg_P/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X1Y2           FDPE (Prop_fdpe_C_Q)         0.141     1.564 f  cellEnd/currentState_reg_P/Q
+                         net (fo=2, routed)           0.114     1.678    cellFirst/currentState_reg_P_2
+    SLICE_X1Y2           LUT5 (Prop_lut5_I0_O)        0.045     1.723 r  cellFirst/nextState/O
+                         net (fo=2, routed)           0.126     1.849    cellFirst/nextState__0
+    SLICE_X0Y1           FDPE                                         r  cellFirst/currentState_reg_P/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        0.000     0.000 r  
+    M18                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    M18                  IBUF (Prop_ibuf_I_O)         0.356     0.356 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.689     1.044    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.073 r  clk_IBUF_BUFG_inst/O
+                         net (fo=12, routed)          0.867     1.940    cellFirst/clk_IBUF_BUFG
+    SLICE_X0Y1           FDPE                                         r  cellFirst/currentState_reg_P/C
+                         clock pessimism             -0.501     1.439    
+    SLICE_X0Y1           FDPE (Hold_fdpe_C_D)         0.070     1.509    cellFirst/currentState_reg_P
+  -------------------------------------------------------------------
+                         required time                         -1.509    
+                         arrival time                           1.849    
+  -------------------------------------------------------------------
+                         slack                                  0.341    
+
+Slack (MET) :             0.341ns  (arrival time - required time)
+  Source:                 cellEnd/currentState_reg_P/C
+                            (rising edge-triggered cell FDPE clocked by clk  {rise@0.000ns fall@2.000ns period=4.000ns})
+  Destination:            cellFirst/currentState_reg_C/D
+                            (rising edge-triggered cell FDCE clocked by clk  {rise@0.000ns fall@2.000ns period=4.000ns})
+  Path Group:             clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk rise@0.000ns - clk rise@0.000ns)
+  Data Path Delay:        0.427ns  (logic 0.186ns (43.575%)  route 0.241ns (56.425%))
+  Logic Levels:           1  (LUT5=1)
+  Clock Path Skew:        0.016ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.940ns
+    Source Clock Delay      (SCD):    1.423ns
+    Clock Pessimism Removal (CPR):    0.501ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    M18                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    M18                  IBUF (Prop_ibuf_I_O)         0.167     0.167 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.634     0.801    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.827 r  clk_IBUF_BUFG_inst/O
+                         net (fo=12, routed)          0.596     1.423    cellEnd/clk_IBUF_BUFG
+    SLICE_X1Y2           FDPE                                         r  cellEnd/currentState_reg_P/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X1Y2           FDPE (Prop_fdpe_C_Q)         0.141     1.564 f  cellEnd/currentState_reg_P/Q
+                         net (fo=2, routed)           0.114     1.678    cellFirst/currentState_reg_P_2
+    SLICE_X1Y2           LUT5 (Prop_lut5_I0_O)        0.045     1.723 r  cellFirst/nextState/O
+                         net (fo=2, routed)           0.127     1.850    cellFirst/nextState__0
+    SLICE_X1Y0           FDCE                                         r  cellFirst/currentState_reg_C/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        0.000     0.000 r  
+    M18                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    M18                  IBUF (Prop_ibuf_I_O)         0.356     0.356 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.689     1.044    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.073 r  clk_IBUF_BUFG_inst/O
+                         net (fo=12, routed)          0.867     1.940    cellFirst/clk_IBUF_BUFG
+    SLICE_X1Y0           FDCE                                         r  cellFirst/currentState_reg_C/C
+                         clock pessimism             -0.501     1.439    
+    SLICE_X1Y0           FDCE (Hold_fdce_C_D)         0.070     1.509    cellFirst/currentState_reg_C
+  -------------------------------------------------------------------
+                         required time                         -1.509    
+                         arrival time                           1.850    
+  -------------------------------------------------------------------
+                         slack                                  0.341    
+
+Slack (MET) :             0.353ns  (arrival time - required time)
+  Source:                 cellFirst/currentState_reg_P/C
+                            (rising edge-triggered cell FDPE clocked by clk  {rise@0.000ns fall@2.000ns period=4.000ns})
+  Destination:            genCells[1].cellBetween/currentState_reg_P/D
+                            (rising edge-triggered cell FDPE clocked by clk  {rise@0.000ns fall@2.000ns period=4.000ns})
+  Path Group:             clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk rise@0.000ns - clk rise@0.000ns)
+  Data Path Delay:        0.436ns  (logic 0.186ns (42.646%)  route 0.250ns (57.354%))
+  Logic Levels:           1  (LUT5=1)
+  Clock Path Skew:        0.013ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.940ns
+    Source Clock Delay      (SCD):    1.423ns
+    Clock Pessimism Removal (CPR):    0.504ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    M18                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    M18                  IBUF (Prop_ibuf_I_O)         0.167     0.167 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.634     0.801    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.827 r  clk_IBUF_BUFG_inst/O
+                         net (fo=12, routed)          0.596     1.423    cellFirst/clk_IBUF_BUFG
+    SLICE_X0Y1           FDPE                                         r  cellFirst/currentState_reg_P/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X0Y1           FDPE (Prop_fdpe_C_Q)         0.141     1.564 f  cellFirst/currentState_reg_P/Q
+                         net (fo=2, routed)           0.184     1.748    genCells[1].cellBetween/currentState_reg_P_1
+    SLICE_X0Y1           LUT5 (Prop_lut5_I0_O)        0.045     1.793 r  genCells[1].cellBetween/nextState/O
+                         net (fo=2, routed)           0.066     1.859    genCells[1].cellBetween/nextState__0
+    SLICE_X1Y1           FDPE                                         r  genCells[1].cellBetween/currentState_reg_P/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        0.000     0.000 r  
+    M18                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    M18                  IBUF (Prop_ibuf_I_O)         0.356     0.356 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.689     1.044    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.073 r  clk_IBUF_BUFG_inst/O
+                         net (fo=12, routed)          0.867     1.940    genCells[1].cellBetween/clk_IBUF_BUFG
+    SLICE_X1Y1           FDPE                                         r  genCells[1].cellBetween/currentState_reg_P/C
+                         clock pessimism             -0.504     1.436    
+    SLICE_X1Y1           FDPE (Hold_fdpe_C_D)         0.070     1.506    genCells[1].cellBetween/currentState_reg_P
+  -------------------------------------------------------------------
+                         required time                         -1.506    
+                         arrival time                           1.859    
+  -------------------------------------------------------------------
+                         slack                                  0.353    
+
+Slack (MET) :             0.359ns  (arrival time - required time)
+  Source:                 genCells[1].cellBetween/currentState_reg_P/C
+                            (rising edge-triggered cell FDPE clocked by clk  {rise@0.000ns fall@2.000ns period=4.000ns})
+  Destination:            genCells[2].cellBetween/currentState_reg_P/D
+                            (rising edge-triggered cell FDPE clocked by clk  {rise@0.000ns fall@2.000ns period=4.000ns})
+  Path Group:             clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk rise@0.000ns - clk rise@0.000ns)
+  Data Path Delay:        0.444ns  (logic 0.186ns (41.890%)  route 0.258ns (58.110%))
+  Logic Levels:           1  (LUT5=1)
+  Clock Path Skew:        0.015ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.939ns
+    Source Clock Delay      (SCD):    1.423ns
+    Clock Pessimism Removal (CPR):    0.501ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    M18                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    M18                  IBUF (Prop_ibuf_I_O)         0.167     0.167 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.634     0.801    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.827 r  clk_IBUF_BUFG_inst/O
+                         net (fo=12, routed)          0.596     1.423    genCells[1].cellBetween/clk_IBUF_BUFG
+    SLICE_X1Y1           FDPE                                         r  genCells[1].cellBetween/currentState_reg_P/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X1Y1           FDPE (Prop_fdpe_C_Q)         0.141     1.564 f  genCells[1].cellBetween/currentState_reg_P/Q
+                         net (fo=2, routed)           0.148     1.712    genCells[2].cellBetween/currentState_reg_P_2
+    SLICE_X1Y2           LUT5 (Prop_lut5_I0_O)        0.045     1.757 r  genCells[2].cellBetween/nextState/O
+                         net (fo=2, routed)           0.110     1.867    genCells[2].cellBetween/nextState__0
+    SLICE_X1Y3           FDPE                                         r  genCells[2].cellBetween/currentState_reg_P/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        0.000     0.000 r  
+    M18                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    M18                  IBUF (Prop_ibuf_I_O)         0.356     0.356 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.689     1.044    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.073 r  clk_IBUF_BUFG_inst/O
+                         net (fo=12, routed)          0.866     1.939    genCells[2].cellBetween/clk_IBUF_BUFG
+    SLICE_X1Y3           FDPE                                         r  genCells[2].cellBetween/currentState_reg_P/C
+                         clock pessimism             -0.501     1.438    
+    SLICE_X1Y3           FDPE (Hold_fdpe_C_D)         0.070     1.508    genCells[2].cellBetween/currentState_reg_P
+  -------------------------------------------------------------------
+                         required time                         -1.508    
+                         arrival time                           1.867    
+  -------------------------------------------------------------------
+                         slack                                  0.359    
+
+Slack (MET) :             0.379ns  (arrival time - required time)
+  Source:                 genCells[2].cellBetween/currentState_reg_C/C
+                            (rising edge-triggered cell FDCE clocked by clk  {rise@0.000ns fall@2.000ns period=4.000ns})
+  Destination:            genCells[3].cellBetween/currentState_reg_C/D
+                            (rising edge-triggered cell FDCE clocked by clk  {rise@0.000ns fall@2.000ns period=4.000ns})
+  Path Group:             clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk rise@0.000ns - clk rise@0.000ns)
+  Data Path Delay:        0.465ns  (logic 0.186ns (40.041%)  route 0.279ns (59.959%))
+  Logic Levels:           1  (LUT5=1)
+  Clock Path Skew:        0.016ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.939ns
+    Source Clock Delay      (SCD):    1.422ns
+    Clock Pessimism Removal (CPR):    0.501ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    M18                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    M18                  IBUF (Prop_ibuf_I_O)         0.167     0.167 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.634     0.801    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.827 r  clk_IBUF_BUFG_inst/O
+                         net (fo=12, routed)          0.595     1.422    genCells[2].cellBetween/clk_IBUF_BUFG
+    SLICE_X0Y3           FDCE                                         r  genCells[2].cellBetween/currentState_reg_C/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X0Y3           FDCE (Prop_fdce_C_Q)         0.141     1.563 f  genCells[2].cellBetween/currentState_reg_C/Q
+                         net (fo=2, routed)           0.097     1.660    genCells[3].cellBetween/currentState_reg_P_3
+    SLICE_X1Y3           LUT5 (Prop_lut5_I2_O)        0.045     1.705 r  genCells[3].cellBetween/nextState/O
+                         net (fo=2, routed)           0.182     1.886    genCells[3].cellBetween/nextState__0
+    SLICE_X0Y5           FDCE                                         r  genCells[3].cellBetween/currentState_reg_C/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        0.000     0.000 r  
+    M18                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    M18                  IBUF (Prop_ibuf_I_O)         0.356     0.356 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.689     1.044    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.073 r  clk_IBUF_BUFG_inst/O
+                         net (fo=12, routed)          0.866     1.939    genCells[3].cellBetween/clk_IBUF_BUFG
+    SLICE_X0Y5           FDCE                                         r  genCells[3].cellBetween/currentState_reg_C/C
+                         clock pessimism             -0.501     1.438    
+    SLICE_X0Y5           FDCE (Hold_fdce_C_D)         0.070     1.508    genCells[3].cellBetween/currentState_reg_C
+  -------------------------------------------------------------------
+                         required time                         -1.508    
+                         arrival time                           1.886    
+  -------------------------------------------------------------------
+                         slack                                  0.379    
+
+Slack (MET) :             0.425ns  (arrival time - required time)
+  Source:                 genCells[1].cellBetween/currentState_reg_P/C
+                            (rising edge-triggered cell FDPE clocked by clk  {rise@0.000ns fall@2.000ns period=4.000ns})
+  Destination:            genCells[2].cellBetween/currentState_reg_C/D
+                            (rising edge-triggered cell FDCE clocked by clk  {rise@0.000ns fall@2.000ns period=4.000ns})
+  Path Group:             clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk rise@0.000ns - clk rise@0.000ns)
+  Data Path Delay:        0.510ns  (logic 0.186ns (36.460%)  route 0.324ns (63.540%))
+  Logic Levels:           1  (LUT5=1)
+  Clock Path Skew:        0.015ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.939ns
+    Source Clock Delay      (SCD):    1.423ns
+    Clock Pessimism Removal (CPR):    0.501ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    M18                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    M18                  IBUF (Prop_ibuf_I_O)         0.167     0.167 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.634     0.801    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.827 r  clk_IBUF_BUFG_inst/O
+                         net (fo=12, routed)          0.596     1.423    genCells[1].cellBetween/clk_IBUF_BUFG
+    SLICE_X1Y1           FDPE                                         r  genCells[1].cellBetween/currentState_reg_P/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X1Y1           FDPE (Prop_fdpe_C_Q)         0.141     1.564 f  genCells[1].cellBetween/currentState_reg_P/Q
+                         net (fo=2, routed)           0.148     1.712    genCells[2].cellBetween/currentState_reg_P_2
+    SLICE_X1Y2           LUT5 (Prop_lut5_I0_O)        0.045     1.757 r  genCells[2].cellBetween/nextState/O
+                         net (fo=2, routed)           0.176     1.933    genCells[2].cellBetween/nextState__0
+    SLICE_X0Y3           FDCE                                         r  genCells[2].cellBetween/currentState_reg_C/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        0.000     0.000 r  
+    M18                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    M18                  IBUF (Prop_ibuf_I_O)         0.356     0.356 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.689     1.044    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.073 r  clk_IBUF_BUFG_inst/O
+                         net (fo=12, routed)          0.866     1.939    genCells[2].cellBetween/clk_IBUF_BUFG
+    SLICE_X0Y3           FDCE                                         r  genCells[2].cellBetween/currentState_reg_C/C
+                         clock pessimism             -0.501     1.438    
+    SLICE_X0Y3           FDCE (Hold_fdce_C_D)         0.070     1.508    genCells[2].cellBetween/currentState_reg_C
+  -------------------------------------------------------------------
+                         required time                         -1.508    
+                         arrival time                           1.933    
+  -------------------------------------------------------------------
+                         slack                                  0.425    
+
+Slack (MET) :             0.480ns  (arrival time - required time)
+  Source:                 cellFirst/currentState_reg_P/C
+                            (rising edge-triggered cell FDPE clocked by clk  {rise@0.000ns fall@2.000ns period=4.000ns})
+  Destination:            genCells[1].cellBetween/currentState_reg_C/D
+                            (rising edge-triggered cell FDCE clocked by clk  {rise@0.000ns fall@2.000ns period=4.000ns})
+  Path Group:             clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk rise@0.000ns - clk rise@0.000ns)
+  Data Path Delay:        0.555ns  (logic 0.186ns (33.486%)  route 0.369ns (66.514%))
+  Logic Levels:           1  (LUT5=1)
+  Clock Path Skew:        0.016ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.940ns
+    Source Clock Delay      (SCD):    1.423ns
+    Clock Pessimism Removal (CPR):    0.501ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    M18                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    M18                  IBUF (Prop_ibuf_I_O)         0.167     0.167 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.634     0.801    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.827 r  clk_IBUF_BUFG_inst/O
+                         net (fo=12, routed)          0.596     1.423    cellFirst/clk_IBUF_BUFG
+    SLICE_X0Y1           FDPE                                         r  cellFirst/currentState_reg_P/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X0Y1           FDPE (Prop_fdpe_C_Q)         0.141     1.564 f  cellFirst/currentState_reg_P/Q
+                         net (fo=2, routed)           0.184     1.748    genCells[1].cellBetween/currentState_reg_P_1
+    SLICE_X0Y1           LUT5 (Prop_lut5_I0_O)        0.045     1.793 r  genCells[1].cellBetween/nextState/O
+                         net (fo=2, routed)           0.186     1.978    genCells[1].cellBetween/nextState__0
+    SLICE_X2Y1           FDCE                                         r  genCells[1].cellBetween/currentState_reg_C/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        0.000     0.000 r  
+    M18                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    M18                  IBUF (Prop_ibuf_I_O)         0.356     0.356 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.689     1.044    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.073 r  clk_IBUF_BUFG_inst/O
+                         net (fo=12, routed)          0.867     1.940    genCells[1].cellBetween/clk_IBUF_BUFG
+    SLICE_X2Y1           FDCE                                         r  genCells[1].cellBetween/currentState_reg_C/C
+                         clock pessimism             -0.501     1.439    
+    SLICE_X2Y1           FDCE (Hold_fdce_C_D)         0.059     1.498    genCells[1].cellBetween/currentState_reg_C
+  -------------------------------------------------------------------
+                         required time                         -1.498    
+                         arrival time                           1.978    
+  -------------------------------------------------------------------
+                         slack                                  0.480    
+
+Slack (MET) :             0.508ns  (arrival time - required time)
+  Source:                 genCells[4].cellBetween/currentState_reg_P/C
+                            (rising edge-triggered cell FDPE clocked by clk  {rise@0.000ns fall@2.000ns period=4.000ns})
+  Destination:            cellEnd/currentState_reg_P/D
+                            (rising edge-triggered cell FDPE clocked by clk  {rise@0.000ns fall@2.000ns period=4.000ns})
+  Path Group:             clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk rise@0.000ns - clk rise@0.000ns)
+  Data Path Delay:        0.595ns  (logic 0.186ns (31.280%)  route 0.409ns (68.720%))
+  Logic Levels:           1  (LUT5=1)
+  Clock Path Skew:        0.017ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.940ns
+    Source Clock Delay      (SCD):    1.422ns
+    Clock Pessimism Removal (CPR):    0.501ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    M18                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    M18                  IBUF (Prop_ibuf_I_O)         0.167     0.167 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.634     0.801    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.827 r  clk_IBUF_BUFG_inst/O
+                         net (fo=12, routed)          0.595     1.422    genCells[4].cellBetween/clk_IBUF_BUFG
+    SLICE_X1Y4           FDPE                                         r  genCells[4].cellBetween/currentState_reg_P/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X1Y4           FDPE (Prop_fdpe_C_Q)         0.141     1.563 f  genCells[4].cellBetween/currentState_reg_P/Q
+                         net (fo=2, routed)           0.284     1.847    cellEnd/currentState_reg_P_1
+    SLICE_X1Y4           LUT5 (Prop_lut5_I0_O)        0.045     1.892 r  cellEnd/nextState/O
+                         net (fo=2, routed)           0.124     2.016    cellEnd/nextState__0
+    SLICE_X1Y2           FDPE                                         r  cellEnd/currentState_reg_P/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        0.000     0.000 r  
+    M18                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    M18                  IBUF (Prop_ibuf_I_O)         0.356     0.356 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.689     1.044    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.073 r  clk_IBUF_BUFG_inst/O
+                         net (fo=12, routed)          0.867     1.940    cellEnd/clk_IBUF_BUFG
+    SLICE_X1Y2           FDPE                                         r  cellEnd/currentState_reg_P/C
+                         clock pessimism             -0.501     1.439    
+    SLICE_X1Y2           FDPE (Hold_fdpe_C_D)         0.070     1.509    cellEnd/currentState_reg_P
+  -------------------------------------------------------------------
+                         required time                         -1.509    
+                         arrival time                           2.016    
+  -------------------------------------------------------------------
+                         slack                                  0.508    
+
+Slack (MET) :             0.513ns  (arrival time - required time)
+  Source:                 genCells[4].cellBetween/currentState_reg_P/C
+                            (rising edge-triggered cell FDPE clocked by clk  {rise@0.000ns fall@2.000ns period=4.000ns})
+  Destination:            cellEnd/currentState_reg_C/D
+                            (rising edge-triggered cell FDCE clocked by clk  {rise@0.000ns fall@2.000ns period=4.000ns})
+  Path Group:             clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk rise@0.000ns - clk rise@0.000ns)
+  Data Path Delay:        0.600ns  (logic 0.186ns (30.975%)  route 0.414ns (69.025%))
+  Logic Levels:           1  (LUT5=1)
+  Clock Path Skew:        0.017ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.940ns
+    Source Clock Delay      (SCD):    1.422ns
+    Clock Pessimism Removal (CPR):    0.501ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    M18                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    M18                  IBUF (Prop_ibuf_I_O)         0.167     0.167 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.634     0.801    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.827 r  clk_IBUF_BUFG_inst/O
+                         net (fo=12, routed)          0.595     1.422    genCells[4].cellBetween/clk_IBUF_BUFG
+    SLICE_X1Y4           FDPE                                         r  genCells[4].cellBetween/currentState_reg_P/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X1Y4           FDPE (Prop_fdpe_C_Q)         0.141     1.563 f  genCells[4].cellBetween/currentState_reg_P/Q
+                         net (fo=2, routed)           0.284     1.847    cellEnd/currentState_reg_P_1
+    SLICE_X1Y4           LUT5 (Prop_lut5_I0_O)        0.045     1.892 r  cellEnd/nextState/O
+                         net (fo=2, routed)           0.130     2.022    cellEnd/nextState__0
+    SLICE_X0Y2           FDCE                                         r  cellEnd/currentState_reg_C/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        0.000     0.000 r  
+    M18                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    M18                  IBUF (Prop_ibuf_I_O)         0.356     0.356 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.689     1.044    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.073 r  clk_IBUF_BUFG_inst/O
+                         net (fo=12, routed)          0.867     1.940    cellEnd/clk_IBUF_BUFG
+    SLICE_X0Y2           FDCE                                         r  cellEnd/currentState_reg_C/C
+                         clock pessimism             -0.501     1.439    
+    SLICE_X0Y2           FDCE (Hold_fdce_C_D)         0.070     1.509    cellEnd/currentState_reg_C
+  -------------------------------------------------------------------
+                         required time                         -1.509    
+                         arrival time                           2.022    
+  -------------------------------------------------------------------
+                         slack                                  0.513    
+
+
+
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         clk
+Waveform(ns):       { 0.000 2.000 }
+Period(ns):         4.000
+Sources:            { clk }
+
+Check Type        Corner  Lib Pin  Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location       Pin
+Min Period        n/a     BUFG/I   n/a            2.155         4.000       1.845      BUFGCTRL_X0Y0  clk_IBUF_BUFG_inst/I
+Min Period        n/a     FDCE/C   n/a            1.000         4.000       3.000      SLICE_X0Y2     cellEnd/currentState_reg_C/C
+Min Period        n/a     FDPE/C   n/a            1.000         4.000       3.000      SLICE_X1Y2     cellEnd/currentState_reg_P/C
+Min Period        n/a     FDCE/C   n/a            1.000         4.000       3.000      SLICE_X1Y0     cellFirst/currentState_reg_C/C
+Min Period        n/a     FDPE/C   n/a            1.000         4.000       3.000      SLICE_X0Y1     cellFirst/currentState_reg_P/C
+Min Period        n/a     FDCE/C   n/a            1.000         4.000       3.000      SLICE_X2Y1     genCells[1].cellBetween/currentState_reg_C/C
+Min Period        n/a     FDPE/C   n/a            1.000         4.000       3.000      SLICE_X1Y1     genCells[1].cellBetween/currentState_reg_P/C
+Min Period        n/a     FDCE/C   n/a            1.000         4.000       3.000      SLICE_X0Y3     genCells[2].cellBetween/currentState_reg_C/C
+Min Period        n/a     FDPE/C   n/a            1.000         4.000       3.000      SLICE_X1Y3     genCells[2].cellBetween/currentState_reg_P/C
+Min Period        n/a     FDCE/C   n/a            1.000         4.000       3.000      SLICE_X0Y5     genCells[3].cellBetween/currentState_reg_C/C
+Low Pulse Width   Slow    FDCE/C   n/a            0.500         2.000       1.500      SLICE_X0Y2     cellEnd/currentState_reg_C/C
+Low Pulse Width   Slow    FDPE/C   n/a            0.500         2.000       1.500      SLICE_X1Y2     cellEnd/currentState_reg_P/C
+Low Pulse Width   Slow    FDCE/C   n/a            0.500         2.000       1.500      SLICE_X1Y0     cellFirst/currentState_reg_C/C
+Low Pulse Width   Slow    FDPE/C   n/a            0.500         2.000       1.500      SLICE_X0Y1     cellFirst/currentState_reg_P/C
+Low Pulse Width   Slow    FDCE/C   n/a            0.500         2.000       1.500      SLICE_X2Y1     genCells[1].cellBetween/currentState_reg_C/C
+Low Pulse Width   Slow    FDPE/C   n/a            0.500         2.000       1.500      SLICE_X1Y1     genCells[1].cellBetween/currentState_reg_P/C
+Low Pulse Width   Slow    FDCE/C   n/a            0.500         2.000       1.500      SLICE_X0Y3     genCells[2].cellBetween/currentState_reg_C/C
+Low Pulse Width   Slow    FDPE/C   n/a            0.500         2.000       1.500      SLICE_X1Y3     genCells[2].cellBetween/currentState_reg_P/C
+Low Pulse Width   Slow    FDCE/C   n/a            0.500         2.000       1.500      SLICE_X0Y5     genCells[3].cellBetween/currentState_reg_C/C
+Low Pulse Width   Slow    FDPE/C   n/a            0.500         2.000       1.500      SLICE_X0Y4     genCells[3].cellBetween/currentState_reg_P/C
+High Pulse Width  Fast    FDCE/C   n/a            0.500         2.000       1.500      SLICE_X0Y2     cellEnd/currentState_reg_C/C
+High Pulse Width  Fast    FDPE/C   n/a            0.500         2.000       1.500      SLICE_X1Y2     cellEnd/currentState_reg_P/C
+High Pulse Width  Fast    FDCE/C   n/a            0.500         2.000       1.500      SLICE_X1Y0     cellFirst/currentState_reg_C/C
+High Pulse Width  Fast    FDPE/C   n/a            0.500         2.000       1.500      SLICE_X0Y1     cellFirst/currentState_reg_P/C
+High Pulse Width  Fast    FDCE/C   n/a            0.500         2.000       1.500      SLICE_X2Y1     genCells[1].cellBetween/currentState_reg_C/C
+High Pulse Width  Fast    FDPE/C   n/a            0.500         2.000       1.500      SLICE_X1Y1     genCells[1].cellBetween/currentState_reg_P/C
+High Pulse Width  Slow    FDCE/C   n/a            0.500         2.000       1.500      SLICE_X0Y3     genCells[2].cellBetween/currentState_reg_C/C
+High Pulse Width  Fast    FDCE/C   n/a            0.500         2.000       1.500      SLICE_X0Y3     genCells[2].cellBetween/currentState_reg_C/C
+High Pulse Width  Slow    FDPE/C   n/a            0.500         2.000       1.500      SLICE_X1Y3     genCells[2].cellBetween/currentState_reg_P/C
+High Pulse Width  Fast    FDPE/C   n/a            0.500         2.000       1.500      SLICE_X1Y3     genCells[2].cellBetween/currentState_reg_P/C
+
+
+

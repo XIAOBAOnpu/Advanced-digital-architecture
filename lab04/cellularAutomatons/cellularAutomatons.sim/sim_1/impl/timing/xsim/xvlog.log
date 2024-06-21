@@ -1,0 +1,11 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab04/cellularAutomatons/cellularAutomatons.sim/sim_1/impl/timing/xsim/tb_ca_1D_time_impl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module caCell
+INFO: [VRFC 10-311] analyzing module caCell_0
+INFO: [VRFC 10-311] analyzing module caCell_1
+INFO: [VRFC 10-311] analyzing module caCell_2
+INFO: [VRFC 10-311] analyzing module caCell_3
+INFO: [VRFC 10-311] analyzing module caCell_4
+INFO: [VRFC 10-311] analyzing module ca_1D
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab04/cellularAutomatons/cellularAutomatons.srcs/sim_1/new/tb_ca_1D.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_ca_1D

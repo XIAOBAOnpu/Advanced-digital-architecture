@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1716386355">
+  <File Type="BITSTR-BMM" Name="ca_1D_bd.bmm"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="ca_1D_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="ca_1D_timing_summary_init.rpt"/>
+  <File Type="ROUTE-PWR" Name="ca_1D_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="ca_1D.tcl"/>
+  <File Type="OPT-TIMING" Name="ca_1D_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="ca_1D_opt.dcp"/>
+  <File Type="ROUTE-PWR-SUM" Name="ca_1D_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="ca_1D_reports.tcl"/>
+  <File Type="OPT-DRC" Name="ca_1D_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="ca_1D.hwdef"/>
+  <File Type="PWROPT-DCP" Name="ca_1D_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="ca_1D_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="ca_1D_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="ca_1D_placed.dcp"/>
+  <File Type="PLACE-IO" Name="ca_1D_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="ca_1D_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="ca_1D_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="ca_1D_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="ca_1D_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="ca_1D_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="ca_1D_incremental_reuse_pre_placed.rpt"/>
+  <File Type="BG-BGN" Name="ca_1D.bgn"/>
+  <File Type="PLACE-TIMING" Name="ca_1D_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="ca_1D_postplace_pwropt.dcp"/>
+  <File Type="BG-BIN" Name="ca_1D.bin"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="ca_1D_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="ca_1D_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="ca_1D_drc_physopted.rpt"/>
+  <File Type="BITSTR-MSK" Name="ca_1D.msk"/>
+  <File Type="PHYSOPT-TIMING" Name="ca_1D_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="ca_1D_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="ca_1D_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="ca_1D_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="ca_1D_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="ca_1D_drc_routed.pb"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="ca_1D.ltx"/>
+  <File Type="ROUTE-DRC-RPX" Name="ca_1D_drc_routed.rpx"/>
+  <File Type="BITSTR-MMI" Name="ca_1D.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="ca_1D_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="ca_1D_methodology_drc_routed.rpx"/>
+  <File Type="BITSTR-SYSDEF" Name="ca_1D.sysdef"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="ca_1D_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="ca_1D_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="ca_1D_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="ca_1D_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="ca_1D_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="ca_1D_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="ca_1D_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="ca_1D_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="ca_1D_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="ca_1D_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="ca_1D_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="ca_1D_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="ca_1D_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="ca_1D_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="ca_1D_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="ca_1D_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="ca_1D_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="ca_1D_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="ca_1D_bus_skew_postroute_physopted.pb"/>
+  <File Type="BG-BIT" Name="ca_1D.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="ca_1D_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BITSTR-RBT" Name="ca_1D.rbt"/>
+  <File Type="BITSTR-NKY" Name="ca_1D.nky"/>
+  <File Type="BG-DRC" Name="ca_1D.drc"/>
+  <File Type="RDI-RDI" Name="ca_1D.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/caCell.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/ca_1D.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="ca_1D"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/arrayCAConstraints.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/new/arrayCAConstraints.xdc"/>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

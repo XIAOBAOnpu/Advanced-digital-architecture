@@ -1,0 +1,7 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"tb_ca_1D_time_impl.v" \
+"../../../../../cellularAutomatons.srcs/sim_1/new/tb_ca_1D.v" \
+
+# Do not sort compile order
+nosort

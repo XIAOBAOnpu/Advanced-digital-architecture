@@ -1,0 +1,77 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Wed May 22 14:38:34 2024
+| Host         : HanBao running 64-bit major release  (build 9200)
+| Command      : report_methodology -file caCell_methodology_drc_routed.rpt -pb caCell_methodology_drc_routed.pb -rpx caCell_methodology_drc_routed.rpx
+| Design       : caCell
+| Device       : xc7a35tcpg236-1
+| Speed File   : -1
+| Design State : Fully Routed
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 8
++-----------+----------+-------------------------------+------------+
+| Rule      | Severity | Description                   | Violations |
++-----------+----------+-------------------------------+------------+
+| LUTAR-1   | Warning  | LUT drives async reset alert  | 2          |
+| TIMING-18 | Warning  | Missing input or output delay | 5          |
+| TIMING-20 | Warning  | Non-clocked latch             | 1          |
++-----------+----------+-------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+LUTAR-1#1 Warning
+LUT drives async reset alert  
+LUT cell currentState_reg_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) currentState_reg_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#2 Warning
+LUT drives async reset alert  
+LUT cell currentState_reg_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) currentState_reg_C/CLR, currentState_reg_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+TIMING-18#1 Warning
+Missing input or output delay  
+An input delay is missing on initialState relative to clock(s) clk
+Related violations: <none>
+
+TIMING-18#2 Warning
+Missing input or output delay  
+An input delay is missing on left relative to clock(s) clk
+Related violations: <none>
+
+TIMING-18#3 Warning
+Missing input or output delay  
+An input delay is missing on right relative to clock(s) clk
+Related violations: <none>
+
+TIMING-18#4 Warning
+Missing input or output delay  
+An input delay is missing on rst relative to clock(s) clk
+Related violations: <none>
+
+TIMING-18#5 Warning
+Missing input or output delay  
+An output delay is missing on currentState relative to clock(s) clk
+Related violations: <none>
+
+TIMING-20#1 Warning
+Non-clocked latch  
+The latch currentState_reg_LDC cannot be properly analyzed as its control pin currentState_reg_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+

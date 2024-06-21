@@ -1,0 +1,119 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed May 22 13:11:40 2024
+# Process ID: 17148
+# Current directory: D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab04/cellularAutomatons
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent23368 D:\BRUFACE\MA2\S02\advancedDigitalArchi\Ex\lab04\cellularAutomatons\cellularAutomatons.xpr
+# Log file: D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab04/cellularAutomatons/vivado.log
+# Journal file: D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab04/cellularAutomatons\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab04/cellularAutomatons/cellularAutomatons.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+launch_simulation
+source tb_ca_1D.tcl
+run 10 us
+close_sim
+launch_simulation
+launch_simulation
+launch_simulation
+source tb_ca_1D.tcl
+run 10 us
+restart
+restart
+run all
+run all
+run all
+run 10 us
+run 10 ns
+run 10 ns
+run all
+close_sim
+launch_simulation
+source tb_ca_1D.tcl
+close_sim
+launch_simulation
+source tb_ca_1D.tcl
+close_sim
+launch_simulation
+launch_simulation
+source tb_ca_1D.tcl
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+open_run impl_1
+report_power -name {power_1}
+report_power -name {power_2}
+report_utilization -name utilization_1
+export_ip_user_files -of_objects  [get_files D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab04/cellularAutomatons/cellularAutomatons.srcs/constrs_1/new/caConstraints.xdc] -no_script -reset -force -quiet
+remove_files  -fileset constrs_1 D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab04/cellularAutomatons/cellularAutomatons.srcs/constrs_1/new/caConstraints.xdc
+close [ open D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab04/cellularAutomatons/cellularAutomatons.srcs/constrs_1/new/arrayCAConstraints.xdc w ]
+add_files -fileset constrs_1 D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab04/cellularAutomatons/cellularAutomatons.srcs/constrs_1/new/arrayCAConstraints.xdc
+set_property target_constrs_file D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab04/cellularAutomatons/cellularAutomatons.srcs/constrs_1/new/arrayCAConstraints.xdc [current_fileset -constrset]
+set_property is_enabled false [get_files  D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab04/cellularAutomatons/cellularAutomatons.srcs/sim_1/new/tb_caCell.v]
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+refresh_design
+report_power -name {power_1}
+close_sim
+launch_simulation
+source tb_ca_1D.tcl
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+refresh_design
+report_power -name {power_1}
+report_utilization -name utilization_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+report_power -name power_1
+launch_simulation -mode post-implementation -type timing
+source tb_ca_1D.tcl
+current_sim simulation_6
+close_sim
+launch_simulation
+source tb_ca_1D.tcl
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+refresh_design
+report_utilization -name utilization_1
+report_power -name {power_1}
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+close_sim
+launch_simulation
+source tb_ca_1D.tcl
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+refresh_design
+report_power -name {power_1}
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+report_utilization -name utilization_1
+close_sim
+launch_simulation
+source tb_ca_1D.tcl
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+refresh_design
+report_utilization -name utilization_1
+close_sim
+launch_simulation
+launch_simulation
+source tb_ca_1D.tcl
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+refresh_design
+report_utilization -name utilization_1
+close_design
+synth_design -rtl -name rtl_1
+close_sim
+close_sim

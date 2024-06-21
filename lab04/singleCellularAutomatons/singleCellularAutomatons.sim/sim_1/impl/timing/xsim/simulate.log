@@ -1,0 +1,19 @@
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+At time                15000: left=0, right=0, next_state=0
+At time                25000: left=0, right=1, next_state=0
+At time                35000: left=0, right=0, next_state=0
+At time                45000: left=0, right=1, next_state=0
+At time                55000: left=1, right=0, next_state=0
+At time                65000: left=1, right=1, next_state=0
+At time                75000: left=1, right=0, next_state=0
+At time                85000: left=1, right=1, next_state=0
+At time                95000: left=0, right=0, next_state=0
+At time               105000: left=0, right=1, next_state=0
+At time               115000: left=0, right=0, next_state=0
+At time               125000: left=0, right=1, next_state=1
+At time               135000: left=1, right=0, next_state=1
+At time               145000: left=1, right=1, next_state=0
+At time               155000: left=1, right=0, next_state=0
+At time               165000: left=1, right=1, next_state=1
+$finish called at time : 165 ns : File "D:/BRUFACE/MA2/S02/advancedDigitalArchi/Ex/lab04/singleCellularAutomatons/singleCellularAutomatons.srcs/sim_1/new/tb_caCell.v" Line 49
